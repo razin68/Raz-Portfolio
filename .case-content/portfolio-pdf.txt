@@ -1,0 +1,799 @@
+Ahmed                                     OVERVIEW
+
+Razin                                     Case Studies
+
+I design for the user in front of me and  Three projects spanning research, design systems, and content strategy.
+the organization that has to deliver it.
+                                          01  Student Voice System
+UX Designer
+                                              Surfacing authentic student stories at key enrollment moments across 250+ graduate programs.
+
+                                              Research Synthesis   Component Design         Content Strategy
+
+Email      ahmedrazinux@gmail.com         02 UX Research Framework
+Portfolio  ahmedrazin.me                                   Weighted impact scoring that shipped two features and stopped one before a sprint was spent.
+LinkedIn   linkedin.com/in/ahmrazin
+Phone      (646) 384 - 7503                   Observation Logging  Weighted Scoring         Hypothesis Testing
+
+                                          03 Healthcare Design Library
+                                                           70 components, adopted by design and engineering, delivered end-to-end in under 3 months.
+
+                                              Design Tokens        Engineering Partnership  Documentation
+Turning student stories from buried                                                                       5
+
+content into persuasive moments 
+
+in the enrollment journey.                                                                                 
+
+
+Prospective students were searching outside the website for authentic student                             Peer Institutions
+experiences because institutional sites buried that content                                               Benchmarked
+
+My Role      Team               I Personally Owned                Outcomes                                3
+
+
+UX Designer  1 UX Lead 
+             Research synthesis
+               18 widgets documented
+              
+
+             2 Developers
+               Component translation
+            6 learner audiences
+
+             1 Product Manager           Student voice system 
+            Designed to scale across 250+  Components. 
+
+                                         Developer documentation           graduate programs              One Content Entry.
+
+                                                                                                          18
+                                                                                                                                                                        
+
+                                                                                                           
+
+
+                                                                                                          Documented Widgets
+
+Ahmed Razin / ahmedrazin.me
+The Research                                        urmc PhD program reputation
+
+Students were looking for                           urmc biomedical genetics student experience reddit
+answers the website
+wasn't providing
+                                   is URMC good for research
+                                                    urmc grad student life
+  
+                                                 urmc phd students what is it like
+
+This decision is crucial to their future. Students  URMC School of Medicine ranking
+need to visualize themselves in the program to
+know its worth it.
+
+Freshman         MCAT Prep                                                             They're not just looking for
+   Year                                                                                program information. 
+
+                                                                                       They're looking for someone
+                                                                                       who's already experienced it
+
+                                                    University of Rochester medical school acceptance rate
+
+Shadowing Hours  Medical School Research            University of Rochester med school student life reddit
+                                                    urmc PhD students happy
+                                                    what is it actually like to live in Rochester as a grad student
+
+Applications       Our
+                 website
+The Research                                       What they found
+
+                 What Students Wanted                   staged photography
+                                                            generic marketing copy
+                       honest program experiences               outdated profile pages
+                               mentorship insight                     No candid content.
+                                                                        isolated "student life" sections
+                non-traditional student paths
+                          career outcomes
+                           candid daily life
+The Next Steps
+
+     The problem wasn't missing content.
+
+             It was missing structure.
+
+   We wanted to elevate the student voice
+        throughout the site experience
+Student Voice System
+
+Three key components for easy access
+
+
+   
+
+   
+
+
+Integrating student perspectives throughout the site to make the experience feel more engaging and human.
+
+Testimonial Preview                                                                                                                                                                Perspectives Feed                                                                                                                      Perspectives Detail
+
+Reusable quote component designed                                                                                                                                                  Scannable directory of student stories integrated                                                                                      Structured narrative format using guided
+for lightweight validation during                                                                                                                                                  directly into program navigation. When they want to                                                                                    prompts to create consistency across
+program exploration.                                                                                                                                                               browse the community.                                                                                                                  profiles.
+
+                                                                                                                                                                                                                                                                               Info For  Departments Giving Patient Care                                                                                                   Info For   Departments Giving Patient Care
+
+                                                                                    Info For   Departments Giving Patient Care
+
+                                                                                                                                                                                                                                                                                                                                                                                                             About Us      Education  Admissions Research
+
+                                          About Us                                  Education  Admissions Research                                                                                              About Us  Education                                                      Admissions Research
+
+                                                                                                                                                                                                                                                                                                                                      Home Graduate Education PhD Programs Biomedical Genetics and Genomics  Student       Kassaundra Amann, PhD
+                                                                                                                                                                                                                                                                                                                                                                                                             Perspectives
+                                                                                                                                                                                                                                                                                                                                      Medical Program
+                                                                                                                                                                                   Home Graduate Education PhD Programs Biomedical Genetics and Genomics Student Perspectives
+                                                                                                                                                                                                                                                                                                                                      Student Perspectives
+                                                                                                                                                                                   Medical Program
+
+                                                                                                                                                                                   Student Perspectives
+
+  Graduate Admissions                                                                                                                                            Read all Stories  Parent Page                  Kassaundra Amann                                                                                          Read Story  Parent Page                     Kassaundra Amann
+                                                                                                                                                                                   Curriculum                                                                                                                                         Curriculum
+      Rise to the top of your field at one of the nation's leading academic medical centers medical centers                                                                        Program Highlights           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor                                        Program Highlights           Focus
+
+                                                                                                                                                                                   Research                     incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do                              Research
+Short, welcoming overview of program philosophy and                                                                                                                                Faculty, Students, & Alumni  eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur                                       Faculty, Students, & Alumni  Investigating the Role of RNA Helicases in Splicing 
+
+differentiators.                                                                                                                                                                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+                                                                                                                                                                                     Faculty                    Read Kassaundra's Story                                                                                                 Faculty                    Current Affiliations
+
+Actively pursue research in diverse areas encompassing the modern biomedical and health sciences. The School of Medicine and Dentistry's interdisciplinary                           Student Researchers                                                                                                                                Student Researchers
+environment will provide you with an educational experience with maximum flexibility, allowing you to pursue intellectual challenges in your specific field and                      Alumni                     Sebastian Bosch                                                                                                         Alumni                     Biochemistry & Molecular Biology Ph.D. 
+
+related areas of interest.                                                                                                                                                           Student Perspectives                                                                                                                               Student Perspectives       Boutz Lab (Lab)
+
+                                                                                                                                                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        I chose the University of Rochester                                                                                                        News and Events              incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do                              News and Events              Why did you choose Rochester for Graduate School?
+
+                                        graduate program because as an UR                                                                                                                                       eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                                        undergrad, I had early exposure to the                                                                                                                                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et.                                                                                    I chose the University of Rochester graduate program because as an UR undergrad, I
+                                        amazing research opportunities and                                                                                                                                      Read Sebastian's Story                                                                                                                             had early exposure to the amazing research opportunities and investigators. I knew, for a
+                                        investigators.                                                                                                                                                                                                                                                                                                             fact, that I would receive high quality training and experience, making me a competitive
+                                                                                                                                                                                                                Darline Castro-Meléndez                                                                                                                            candidate in the future.
+
+                                                                Amari, Medical Student
+                                                                Read their story                                                                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor                                                                     What are your favorite things to do in Rochester/
+                                                                                                                                                                                                                incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do                                                           surrounding area?
+
+Eligibility & Application Requirements                                                                                                                                                                          eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur
+                                                                                                                                                                                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et.                                                                                    In Rochester, I enjoy the many restaurants such as Texas de Brazil, Dinosaur BBQ, and
+Explore application deadlines, prerequisites, and more                                                                                                                                                          Read Darline's Story                                                                                                                               Nick Tahou. During the summer, I enjoy biking on the canal path or in Highland Park, and
+                                                                                                                                                                                                                                                                                                                                                                   canoeing on the Genesee River.
+
+                                                                                                                                                                                                                Erin Gibbons
+                                                                                                                                                                                                                                                                                                                                                                   What do you enjoy most about the Program?
+
+                                                                                                                                                                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                                                                                                                                                                                incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do                                                           What I enjoy the most are the collaboration and support the BMB program provide for its
+                                                                                                                                                                                                                eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur                                                                    students. They really go above and beyond to ensure that our needs are met.
+                                                                                                                                                                                                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+PhD Degree Programs                       Master's Degree                           Advanced Certificate
+                                          Programs                                  Programs
+Pretium nulla nam cras cursus eu. In
+nec quis sem eros lectus proin et. Et in  Pretium nulla nam cras cursus eu. In      Pretium nulla nam cras cursus eu. In
+ut pellentesque at suspendisse nunc.      nec quis sem eros lectus proin et. Et in  nec quis sem eros lectus proin et. Et in
+Student Voice System
+
+Replacing dense
+
+admissions copy with a
+
+scannable student                           Old  New
+
+directory
+
+The previous experience buried student
+perspectives inside long-form content with
+little visual hierarchy.
+
+
+The redesigned feed included
+
+    more students
+
+    clearer navigation
+
+    stronger visual identity
+
+    faster browsing
+Student Voice System                                                                                                          Info For   Departments Giving Patient Care
+
+Making program                                                                                               About Us         Education  Admissions Research
+discovery feel more
+                                        Old  Home Graduate Education PhD Programs                                                        New
+human and navigable
+                                             PhD Programs
+The original PhD directory emphasized
+institutional structure over student         Overview                              Earn Your PhD
+experience.
+                                 Student Spotlight
+                                             Programs                              Actively pursue research in diverse areas encompassing the modern biomedical and health sciences. The
+The redesign introduced:
+                    Financial Aid                         School of Medicine and Dentistry's interdisciplinary environment will provide you with an educational
+    clearer hierarchy
+                       Helpful Resources                     experience with maximum flexibility, allowing you to pursue intellectual challenges in your specific field and
+    student spotlights
+                      News and Events                       related areas of interest.
+    scannable program cards
+                 Life in Rochester
+    contextual storytelling
+                                                       Application to one PhD program per admissions year is accepted; however, you may request to transfer your
+    stronger entry points into program                                             application to a different program at any point in the application process.
+    exploration
+                                                                                   How to Apply  Contact Us
+
+                                                                                   It is our pleasure to announce the 2024 PhD
+                                                                                   Award recipients
+
+                                                                                   Meet our outstanding students leading clinical research and making significant contributions at URMC
+
+                                                                                      Dr. Allison Murphy, Neuroscience
+
+                                                                                        Amet faucibus mollis aenean morbi lobortis sit elit. Sem sed tellus aliquam condimentum
+                                                                                        aliquam sollicitudin scelerisque nibh. Lectus faucibus tellus vitae commodo ac. Morbi
+                                                                                        lobortis aliquam euismod nisi eget placerat enim iaculis. Ac vel lacus senectus velit varius.
+
+                                                                                          Read her story
+
+                                                                                   Dr. Linh Le, Neuroscience
+                                                                                   Dr. Adrian Molina Vargas, Genetics: Bioinformatics
+
+                                                                                   Biomedical Genetics and Genomics           Biophysics, Structural, and
+                                                                                   The widest-ranging neuromedicine and
+                                                                                                                              Computational
+                                                                                   neurosurgery care in the region, plus the  The widest-ranging neuromedicine and
+                                                                                                                              neurosurgery care in the region, plus the
+                                                                                   first Mobile Stroke Unit.                  first Mobile Stroke Unit.
+
+                                                                                   Biomedical Genetics and Genomics           Cellular and Molecular
+                                                                                   The widest-ranging neuromedicine and       Pharmacology and 
+
+
+                                                                                   neurosurgery care in the region, plus the  Physiology
+                                                                                                                              The widest-ranging neuromedicine and
+                                                                                   first Mobile Stroke Unit.                  neurosurgery care in the region, plus the
+                                                                                                                              first Mobile Stroke Unit.
+                                                                                   Epidemiology
+                                                                                   The widest-ranging neuromedicine and       Health Services Research and Policy
+                                                                                   neurosurgery care in the region, plus the  The widest-ranging neuromedicine and
+                                                                                   first Mobile Stroke Unit.
+                                                                                                                              neurosurgery care in the region, plus the
+                                                                                   Immunology, Microbiology and
+                                                                                   Virology                                   first Mobile Stroke Unit.
+                                                                                   The widest-ranging neuromedicine and
+                                                                                                                              Neuroscience
+                                                                                   neurosurgery care in the region, plus the  The widest-ranging neuromedicine and
+
+                                                                                   first Mobile Stroke Unit.                  neurosurgery care in the region, plus the
+
+                                                                                   Statistics                                 first Mobile Stroke Unit.
+                                                                                   The widest-ranging neuromedicine and
+                                                                                                                              Concentration in Bioinformatics and 
+
+                                                                                   neurosurgery care in the region, plus the  Computational Biology
+                                                                                                                              The widest-ranging neuromedicine and
+                                                                                   first Mobile Stroke Unit.
+                                                                                                                              neurosurgery care in the region, plus the
+                                                                                   oicology
+                                                                                                                              first Mobile Stroke Unit.
+
+                                                                                                                              ranslational Biomedical Science
+What Happened
+
+Outcome and Lessons
+
+
+ 
+
+
+The system was fully designed and documented but never reached production due to
+organizational alignment challenges.
+
+Status                                  What I'd do differently
+
+ No production build                    Design the stakeholder alignment in parallel
+
+ What worked
+                           Alignment needs to run alongside the work, not bookend it. This means small
+     reusable CMS architecture
+         check-ins, visible progress, incremental buy-in at each phase rather than a
+     scalable component logic
+          single presentation at the end.
+     integrated storytelling patterns
+
+     developer-ready documentation      The best design review is the one where nobody is surprised.
+
+                                        Ship something first, design the system second
+
+                                        One quote widget on one program page would have changed the
+                                        conversation entirely. A smaller production experiment would have created
+                                        earlier momentum and made broader adoption easier.
+
+                                        Something in production beats everything in Figma.
+Why you need to put     Get in touch
+the right voice in the
+right moment            Email      ahmedrazinux@gmail.com
+                        Portfolio  ahmedrazin.me
+Ahmed Razin             LinkedIn   linkedin.com/in/ahmrazin
+                        Phone      (646) 384 - 7503
+UX Designer
+Building a structured UX                                                                                        268 
+
+research framework for
+product decisions                                                                                               User Observations
+
+Research findings existed across the organization, but there was no                                             11
+
+consistent system for prioritizing, comparing, or operationalizing them.
+                                                                                                                Participants
+My Role      Team               I Personally Owned                      Outcomes
+                                                                                                                3  
+
+UX Designer  1 UX Lead 
+             Scoring methodology
+                    prevented approved feature
+             2 Developers
+               Session coding process
+                 from entering development
+     Distinct Audiences
+             1 Product Manager           Synthesis Framework
+                    increased provider search
+                                         Insight prioritization model
+           comprehension by 275%
+
+                                         Study analysis                          created reusable research
+                                                                                 infrastructure across studies
+
+Ahmed Razin / ahmedrazin.me
+The Starting Point
+
+Before the framework
+
+
+ 
+
+
+Research existed as documents, not operational decision-making tools.
+
+
+ 
+
+
+When I joined UR Medicine's web team, design decisions were made on opinion. Research existed, but it had no
+mechanism to produce answers that leadership would act on.
+
+Decisions by Opinion                 Limited Pushback Ability              No organizational memory
+
+Stakeholder decisions were driven    With less meaningful evidence,        Every project started from zero.
+primarily by:
+                       every request from leadership had     Teams revisited the same usability
+                                     equal weight. Feature prioritization  problems repeatedly
+
+
+   executive preference
+             became subjective.  
+
+   anecdotal feedback
+                
+                                    Insights from previous sessions
+   isolated usability observations
+  Good instincts and bad ones           were buried in documents nobody
+   analytics without behavioral      looked the same.                      referenced.
+   context
+
+
+
+'I don't like the blue' drove
+product direction.
+The Starting Point
+
+The question wasn't whether to do
+research. 
+
+
+ 
+
+
+It was how to make research
+produce answers leadership 
+
+would act on.
+The Framework
+
+Turning qualitative sessions
+
+
+into actionable numbers.
+
+
+
+I designed a research architecture that converts subjective session observations into a numerical score. This would give
+stakeholders a legible signal they can act on that is more meaningful than "he-said she-said" observations. 
+
+ 
+
+The goal: Make research reliable for product direction, not just a soft input.
+
+                                WEIGHTED IMPACT SCORE = Sentiment x Severity
+
+01 Observation Logging          02 Taxonomy Coding                03 Severity Scoring                04 Hypothesis Analysis
+
+Every user behavior, reaction,  Observations were tagged using a  Each observation received:
+        Scores were aggregated at the
+and comment is logged as a      27-code taxonomy to reduce            a sentiment score (-3 to +3)
+  hypothesis level to compare:
+
+discrete observation.           interpretation drift between          a severity score (1­3)
+                                studies.                                                                 baseline usability
+
+                                                                  These combined into a weighted         proposed design changes
+
+                                                                  impact score.                          observed behavioral outcomes
+The Airtable Framework
+
+                           User Observations and Quotes
+                                                                                    Code Book
+                                                                                                            Sentiment Scores
+The Provider Search and Profiles
+
+Using structured research to validate or reject product assumptions
+
+
+
+The first full application of the framework was a provider search and profile study, consisting of 11 participants across
+moderated interviews and Maze click-tracking, testing 3 design hypotheses against a documented baseline. Each
+hypothesis produced a numeric Efficacy Delta that moved directly to the product roadmap.
+
+Shipped                                        Shipped                                                                                                        Killed
+
+   H1: Specialties Label                          H2: Filter Shift                                                                                              H3: Connected Profiles
+
+     Hypothesis: Adding a 'Specialties' label       HReynpaomthee'sDiesp: Raretnmaemnitn'gfilt'Deer ptoartment'                                                  Hypothesis: Surfacing a link to
+     to provider profile headers will improve       f'Siltpeerctioal'tSiepse,c' oiaplteiensb,'yodpeefnaublyt.d 
+ efault will                                     providers' published research on
+     discoverability                                ipfH 
+nirlyctoeprveroisdat.eshterhesesayipsdp:ouonsin'ettrmrseeacnroetgnsn'wtiziigethnwonhreiincwgh ones     their profile card will increase
+     +17 Delta 
+                                    apply to them.                                                                                               appointments booked
+
+     275% Comprehension Lift                        +10.3% Filter Engagement
+                                                                                    -21 Efficacy Delta
+
+                                                    ++150.9.3%%PFrioltfeilreECnlgicakgsement
+                                                                    Widget killed before build
+                                                    +5.9% Profile Clicks
+The Provider Search and Profiles
+
+H1: Small hierarchy changes significantly improved discoverability
+
+Users were failing to find provider specialty information. There was no visual anchor on the page that made it clear.
+
+Simply Adding a label added key discoverability to the page. Recognition, scanning behavior, confidence during
+provider evaluation improved
+
+       Baseline                          Hypothesis                 Before
+                                                                           After
+ -2 
+                               +15
+
+                      
+                                   
+
+                                            Sentiment
+         Sentiment
+                                   With Label:
+
+Without Label:
+                    Provider Experience immediately
+Uncertain on Provider Experience
+  engaged
+Skimmed past key information
+Updating the search filter                                                     Update
+
+H2: What do we do with conflicting data?
+
+
+ 
+
+
+H2: Renaming the filter and opening it by default, showed strong positive
+analytics. But the framework caught a signal the dashboard couldn't:
+qualitative sentiment was only +2, far below the lift shown in our analytics.
+The two signals diverged. 
+
+
+ 
+
+  
+
+
+That divergence was the finding.
+
+          Looker Studio (Analytics)                Qualitative Interviews
+
++18.6% Clicks                           +2 Sentiment
+
+Filter engagement lift 
+             Mild Sentiment
+
+would have shipped as a clear        Some Users were confused on the
+victory and would likely have        usefulness of this filter until they
+needed us to restart the work        were prompted to explore it
+Improving Provider Trust                                                                                                 Clinical Profile
+
+H3: Research stopped the build.
+                                              Update
+
+Before a single sprint was spent.
+                                                                     Research Profile
+
+ 
+
+The team was moving toward building a widget that surfaced a
+provider's research profile on their appointment page
+
+
+ 
+
+
+Hypothesis: academic credentials would increase patient
+trust. 
+
+
+ 
+
+
+The framework killed it before engineering began.
+
+               Hypothesis                        What Research Found
+
+Surfacing a link to a provider's                -21 Sentiment
+published academic research on
+their profile card will increase patient  Users didn't click the widget. The
+trust in the provider's expertise and
+credentials.                              widget created cognitive confusion
+                                          that undermined trust rather than
+Status before Research: 
+                 build it.
+Approved for development
+                                          Status after Research: 
+
+                                          Sprint Saved. Time reallocated
+Operational Impact
+
+Old interviews. New signal.
+
+The framework applied backwards.
+
+The framework changed how the team structured and reused research. I applied the system by looking through interviews
+and session notes from previous projects which included learner interviews and hospital architecture sessions. 
+
+Previous interview sessions became reusable data sources instead of isolated project artifacts.
+
+We obtained                             Education                                   Hospitals
+insight from data
+that had previously  Student Interviews                          Clinical Patient Interviews
+produced no
+actionable output.   Older research had produced new             The hospital redesign research turned
+                     hypotheses on navigation confusion that     observations that seemed like isolated
+                     had been simply logged as 'anecdotal'. 
+    comments into a clear sentiment pattern: 
+
+
+                     It ended up scoring high-severity across 6  Patients expected hospital-specific
+                     of 8 participants.                          navigation, not system-wide navigation.
+                What this meant for us
+
+We didn't just need interviews.
+
+We needed a research system.
+
+           Whether you're building a WeWork-style platform for
+           construction businesses or a healthcare product at
+
+               institutional scale, the problem is the same:  
+
+      Design decisions often get made on opinion until you build
+
+             the infrastructure to make them on evidence. 
+
+      I've built that infrastructure, and it can work on any scale.
+                       Key Learnings
+
+      Insights from a more
+comprehensive research process
+
+The Right Direction                     Decisions that stick                   Data that compounds
+
+The H3 widget story isn't unique to     When leadership can see a number, not  A relational research architecture
+healthcare. Every product team has a    just a theme or a quote, research      means every study makes the next
+feature someone is confident about      becomes a direction mechanism          one smarter. You're not starting from
+that users don't need. 
+                instead of a soft input. 
+             zero each time.
+
+
+   
+                                      
+                                     
+
+
+A scored research framework catches     Buy-in becomes easier to get and       You're adding to a system with
+it before engineering spends a sprint.  harder to reverse.                     institutional memory.
+Design decisions get   Get in touch
+made on opinion until
+you have the           Email      ahmedrazinux@gmail.com
+infrastructure to      Portfolio  ahmedrazin.me
+make them on           LinkedIn   linkedin.com/in/ahmrazin
+evidence.              Phone      (646) 384 - 7503
+
+Ahmed Razin
+
+UX Designer
+Rebuilding a fragmented
+Healthcare Design Library
+
+UR Medicine's design system had low adoption. 
+
+How I rebuilt the Design System and what it means for teams building products that scale
+
+My Role      Team               I Personally Owned                      Outcomes
+
+UX Designer  1 UX Lead 
+          component auditing
+                     70 components shipped 
+
+             2 Developers
+          documentation structure
+                reduced time for implementation
+
+             1 Product Manager      responsive behavior specs
+              design documentation adopted by
+                                    content editor guidance
+                developers and content editors
+
+                                    developer collaboration workflows
+      end-to-end rollout under 3 months
+                                    implementation clarification
+
+Ahmed Razin / ahmedrazin.me
+Diagnosing the Problem
+
+ Design                 Engineering                        Threads           Slow Communication
+                                                           Meetings
+         UX · Visual           Frontend · Backend          Rework            Constant back-and-forth for making
+                                                                             updates, revisions and seeking alignment
+Content                           PM                                         consumed time and slows progress
+
+     CMS · Editors             Strategy · Roadmap  Button                    No Source of Truth
+
+                                                   Button  Button            Multiple versions of the same component
+                                                   Button                    with a variety of inconsistencies
+                                                            Find a Provider
+
+                                                                             Skeptical Stakeholders
+
+                                                                             We had tried fixing this before. Getting
+                                                                             stakeholder buy-in meant proving this
+                                                                             time was different.
+How I Identified The Problem
+
+UR Medicine is a 30,000 person       What happens when design          High-Stakes Search Friction
+
+academic medical center serving 1.2  and engineering are not
+Million patients across Western New York. speaking the same language?  Broken patterns force patients to
+                                                                       spend more time finding care than
+                                                                       receiving it.
+
+                                                                       Slow Feature Release
+
+
+                                                                       Work piled up and users have to
+                                                                       wait longer for more pressing bug
+                                                                       fixes or feature updates
+
+                                                                       Loss of Trust
+
+
+                                                                       When a medical portal looks
+                                                                       fragmented, it erodes the perceived
+                                                                       professionalism of the institution
+
+                                                                       Company Name
+Approach
+
+What we had to do to rebuild our
+design system right
+
+Step 1 · I owned                      Step 2 · I owned                           Step 3 · Collaboration
+
+Problem Framing                       Token architecture                        Engineering Partnership
+
+Diagnosed why the library had failed  Defined the full design foundation:        Worked directly with developers on
+through developer conversations, and  typography, color, system, grid, spacing,  every component. If it couldn't be
+determined it was missing a lot of    iconography, animation, borders, and       implemented cleanly, the design
+information they needed               shadows.                                   changed. Significantly reduced design
+                                                                                 review time after handoff.
+Moving the Team Forward
+with better documentation
+
+           Provides content editors with more clarity
+
+                                                                                 
+
+
+              Explicit Required vs. Optional fields and CMS-specific guidance
+              (Kentico path, image size recommendations) mean editors
+              execute independently without pulling developers away from real
+              work
+
+
+
+
+           Reduced the design-to-dev gap at all breakpoints 
+
+
+                                                                                
+
+
+               Tablet scaling, mobile stacking, margin behavior, all spelled out so
+               developers build what was designed, not what they assumed was
+               designed
+
+
+
+
+           Grounded more future decisions in the user 
+
+                                                                                 
+
+
+               The embedded User Story ("I want to read real stories about people
+               like me...") gives the team a north star that replaces opinion-based
+               debates with user-centered ones
+
+
+
+
+           Reduced stakeholder guesswork at review time 
+
+                                                                                 
+
+
+               Turned stakeholder reviews into more user-centered conversations.
+               Instead of "I don't like the blue," the discussion became "does this
+               serve what the patient needs?"
+                             What I Learned
+
+The system that survives isn't the prettiest one. It's
+    the one people actually trust enough to use.
+
+ <3 mo                                 1.2M                                       70
+
+end-to-end delivery from audit to    The design system supported digital      production-ready components
+                adoption           experiences used across a large regional      documented, synced, and
+                                   healthcare network serving over 1 million                 shipped
+
+                                                  patients annually.
+
+Convincing stakeholders that documentation could work when every
+previous attempt had failed was harder than designing the components
+Good systems are  Get in touch
+easy to trust,
+maintain, and     Email      ahmedrazinux@gmail.com
+scale.
+                  Portfolio  ahmedrazin.me
+Ahmed Razin
+                  LinkedIn   linkedin.com/in/ahmrazin
+UX Designer
+                  Phone      (646) 384 - 7503
+

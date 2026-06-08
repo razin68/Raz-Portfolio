@@ -1,0 +1,317 @@
+﻿
+---
+Ahmed Razin | Critme 
+---
+PROJECTS 
+(current)
+---
+RESUME
+---
+ABOUT
+---
+CONTACT
+---
+Critme
+---
+A platform facilitating effective critiques for designers 
+---
+View Prototype
+---
+Project Overview
+---
+Project Time:
+ 3.5 months (January 2019 to May 2019) 
+---
+The Problem:
+ New designers lack an accessible way to get thoughtfully critiqued on their work and process.
+---
+The Solution:
+ Critme is a website that helps UX designers critique and share design work in an intuitive and engaging way. It encourages best practices for critiquing such as prioritizing a conversation focused on the design.
+---
+My Role: 
+For my senior project, my role involved all aspects of the design process, from initial research to high-fidelity design. I adopted a human-centered approach to learn how to encourage thoughtful critiques. 
+---
+My Process
+---
+Research
+---
+Goal: 
+---
+Understand designers on how they feel about critiques and their UX education
+---
+Many designers these days are transitioning into the career through bootcamps and online courses which can cost several thousand dollars. For example, the Flatiron School's UX Bootcamp costs just over $16,000! How well do these courses prepare designers for the job? Designers mentioned that feedback was essential to improve. 
+---
+But is good feedback inaccessible? 
+ Often in my conversations with designers out of these programs, they did not sound as confident in their work as the price to entry suggests. I wanted to survey new designers, particularly those who graduated through Bootcamps and online courses to see if this problem is widespread.
+---
+As a tutor for several years before pursuing UX Design, I was always interested in education and how career paths are changing in the digital age. Many designers these days are transitioning into the career through bootcamps and online courses which can cost several thousand dollars. The Flatiron School's UX Bootcamp costs just over $16,000! But how well do these courses prepare designers for the job? They mentioned that feedback was essential to improve. 
+---
+But is good feedback inaccessible? 
+ Often in my conversations with fresh designers out of these programs, they did not sound as confident in their work as the price to entry would suggest. I wanted to survey new designers, particularly those who graduated through Bootcamps and online courses to see if this problem is widespread.
+---
+Surveys
+---
+Goal: 
+---
+Get an overview on how designers feel about their education
+---
+I created a survey surrounding design education and recruited designers of all experience levels, not just new designers out of these programs, to complete it by promoting it in several slack and facebook groups. At this stage of the process, I believed it was important to also understand the feelings of more experienced designers to see how they compare with that of new designers and the design community as a whole.  
+---
+From a total of 60 responses, it was surprising to see how little many new designers felt satisfied with how they learned UX! Feedback also certainly proves essential for designers to learn and improve, but it was surprising how little they sought it. 
+---
+Why was it uncommon?
+ I wanted deeper insight from designers on their learning process, so I conducted some interviews.
+---
+Interviews
+---
+Goal: 
+---
+Gain deeper insight on how designers feel about feedback 
+---
+Through my meetups and NYU professor who was also a GA Instructor, I connected with several new designers fresh out of these programs and conducted 7 interviews to learn more and empathise with their feelings towards them.  
+---
+â€œHow often do you share work online?â€
+---
+"Sometimes I feel like my projects arenâ€™t done yet. I donâ€™t know where to post it, or who would appreciate it or where to receive feedback."
+---
+"What was the biggest issue you had regarding feedback in your class?"
+---
+â€œFor my UX Class, they gave great feedback, but it sucked having to wait all the time for a decent response.â€
+---
+"How do you feel in your ability to walk through problems?"
+---
+â€œI feel like I have an understanding of the process. But compared to other UX Designers, I donâ€™t feel like my confidence is there yet.â€
+---
+â€œA lot of boot-camps make it seem like it's really easy, but not so much at all, especially If you don't have design experience.â€
+---
+Pain Points
+---
+Many designers felt uncomfortable asking for critiques from mentors because they wanted to save their time 
+---
+They didn't feel too confident articulating their design decisions
+---
+They often encountered unhelpful reactive critiques that were fueled by opinion. 
+---
+Based on my interviews and survey data, it was clear to me that the process and frequency of critiques among designers can be improved. If they are such an effective way to be a better designer, couldn't they be more accessible and convenient? 
+---
+Why aren't critiques as popular online?
+ It was time to analyze competitors to see how online design critiques occur and whether they are facilitated in any way. 
+---
+Interviews
+---
+Goal: 
+---
+Gain deeper insight on how designers feel about feedback 
+---
+Through my meetups and NYU professor who was also a GA Instructor, I connected with several new designers fresh out of these programs and conducted interviews to learn more and empathise with their feelings towards them.  
+---
+â€œHow often do you share work online?â€
+---
+Sometimes I feel like my projects arenâ€™t done yet. I donâ€™t know where to post it, or who would appreciate it or where to receive feedback.
+---
+"What was the biggest issue you had regarding feedback in your class?"
+---
+â€œFor my UX Class, they gave great feedback, but it sucked having to wait all the time for a decent response.â€
+---
+"How do you feel in your ability to walk through problems?"
+---
+â€œI feel like I have an understanding of the process. But compared to other UX Designers, I donâ€™t feel like my confidence is there yet.â€
+---
+â€œA lot of boot-camps make it seem like it's really easy, but not so much at all, especially If you don't have design experience.â€
+---
+Pain Points
+---
+Many designers felt uncomfortable asking for critiques from mentors because they wanted to save their time 
+---
+They didn't feel too confident articulating their design decisions
+---
+They often encountered unhelpful reactive critiques that were fueled by opinion. 
+---
+Based on my interviews and survey data, it was clear to me that the process and frequency of critiques among designers can be improved. If they are such an effective way to learn design practices and practice articulating design decisions, couldn't they be more accessible and convenient for new designers? 
+---
+Why aren't critiques as popular online?
+ It was time to analyze competitors to see how online design critiques occur and whether they are facilitated in any way. 
+---
+Competitor Analysis
+---
+Goal: 
+---
+Explore websites hosting design feedback for ways it can be improved 
+---
+Key Insights
+---
+Behance
+ and 
+Dribble
+ are showcases that don't emphasize the designerâ€™s thought process and most of the time only have simple comments like "Good work!" 
+---
+Designer News
+ and 
+Facebook Groups
+ are great forums for discussion but often have projects posted for critiquing buried among dozens of other posts. 
+---
+Online design communities often offer no guidance or structure to help facilitate good critiques. The online nature of a website, while convinient, does not lend itself to time-intensive and personalized attention. How can I strike a balance? 
+---
+Design Challenge
+---
+How can I help new designers feel comfortable and confident critiquing the work of others? 
+---
+Sketches
+---
+Goal: 
+---
+Explore ideas to inspire designers to discover and share projects  
+---
+Through my research on effective critiques asking senior designers on their experiences critiquing and reading 
+Discussing Design by Adam Conner and Aaraon Iizary
+, I learned that having a focus is highly important to making sure they are useful. I wanted to start by exploring two features that would ideally boost critique quality. 
+---
+Method Goal
+---
+If it is clear to the critiquer why the designer pursued a method such as an interview, it can help them critique the designer on the execution of that method.
+---
+Critique Goal 
+---
+An initial focus can help the critiquer know where to start and save time. The designer benefits by the self-reflection and focus, asking themselves what is the most important question.
+---
+I experimented with several ways of discovering, critiquing, and creating projects.
+---
+How can I
+ present projects in such a way that it encourages critiques? 
+---
+How can I
+ help the designer best feel prepared while creating a project? 
+---
+Home Screen
+---
+Project Page
+---
+Create method
+---
+Share project
+---
+Task Flow
+---
+Goal: 
+---
+Figure out an intuitive flow for a designer sharing a project 
+---
+Based on my competitive analysis, I created a simple task flow based on the use case of creating a project and sharing a part of their process assuming the user is logged in.
+---
+Task Flow
+---
+Based on my competitor analysis, I realized that designers would likely want to view the projects of other designers and if interested, click on it to learn more details to critique it. Assuming the user is logged in, I created a task flow based on the use case of creating a project and sharing a part of their process. 
+---
+Wireframes
+---
+Goal:
+---
+Create low-fidelity wireframes for user testing   
+---
+Home Screen
+---
+Project Page
+---
+Create method
+---
+Share project
+---
+Testing the Wireframes
+---
+Surprisingly,
+ many users felt confused about what the project cards meant. I assumed that an image of the designer's method as a thumbnail to their projects would motivate users to critique, but they felt thoroughly unprepared for doing so.
+---
+Although the goals helped users understand the context of the project, they ultimately didn't feel supported on how to have a productive conversation. 
+---
+Critiques felt like an afterthought in the process!
+---
+Creating critique guides
+---
+Goal: 
+---
+Collect best practices so designers feel prepared
+---
+Adding a critique guide
+---
+My assumption that users wouldn't read a guide was challenged because no guidance at all ended up leaving the designer unsure of what a critique is about and how to manage the conversation.
+---
+How can I 
+succinctly inform the designer and critiquer of some of the best practices for critiques so that they are motivated to read it? I realized that displaying it while creating the post would get the message reinforced before the designer opens it for discussion. 
+---
+Redesigning the project
+---
+Goal: 
+---
+Iterate on the project card to be more useful
+---
+How can  I 
+help the designer provide relevant information for an effective critique while still sparking the curiosity of a viewer to learn more from a quick glance?
+---
+One way I solved this problem was by including the critique goal right under the title of the project, helping the critiquer quickly understand the project and how to approach the discussion. 
+---
+Redesigning the project card
+---
+Redesigning the project card
+---
+How can  
+ I help the designer provide relevant information for an effective critique while still sparking the curiosity of a viewer to learn more from a quick glance? One way I solved this problem was by including the critique goal right under the title of the project, helping the critiquer quickly understand the project and how to approach the discussion. 
+---
+User testing
+---
+Goal: 
+---
+Improve the designers excitement for critiquing
+---
+Generally, the guide tips were excellent in helping users feel more confident to critique work and share their thoughts! They really appreciated being reminded on the purpose of critiques and to not rush to respond, recounting their own experiences of losing track of the conversation.
+---
+With my final iteration of the guide, users felt like they learned something valuable which they could start implementing right away! 
+---
+Final Design
+---
+Home Screen
+---
+Project Page
+---
+Create method
+---
+Share project
+---
+High-fidelity iteration of a critique guide for both a designer and critiquer
+---
+Final Thoughts
+---
+Fallback
+---
+Critiquing does not need to come from experts in the field, in fact, it could even benefit without the years of specialization that can bias their assessment. Many new designers would love to engage in critiquing more if they felt like they had the ability!
+---
+Its remarkable how a designer often just needs a few pointers and one good discussion and they'd feel comfortable and prepared to both give and recieve good critiques. 
+---
+Let's connect!
+---
+I love working on interesting projects. If you like what you see, use the form on my contact page or use the 
+---
+Contact
+---
+ahmed.razin@nyu.edu
+---
+646-384-7503
+---
+@ razin68
+---
+@ ahmed-razin
+---
+Projects
+---
+Resume
+---
+About
+---
+Contact
+---
+&times;
+---
+Close
+---
+Close
+---
+

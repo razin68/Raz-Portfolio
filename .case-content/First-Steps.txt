@@ -1,0 +1,310 @@
+﻿
+---
+Ahmed Razin | First Steps 
+---
+PROJECTS 
+(current)
+---
+RESUME
+---
+ABOUT
+---
+CONTACT
+---
+First Steps
+---
+A Task-Management App to improve focus and clarity 
+---
+View Prototype
+---
+Project Overview
+---
+Project Time:
+ 3.5 months (September 2018 to December 2018) 
+---
+The Problem:
+ It can be challenging to start and accomplish the more meaningful tasks in the day. 
+---
+The Solution:
+ First Steps is an app that helps group tasks by how long they will take to accomplish and encourages the user to think about the first step to achieve them. 
+---
+My Role: 
+For my UX class, my role involved all aspects of the design process, from initial research to high-fidelity design. I adopted a human-centered approach to learn how to boost motivation and focus to accomplish the right tasks.
+---
+My Process
+---
+Research
+---
+Goal: 
+---
+Understand the problems people face in getting their tasks done  
+---
+We always have something to do in our busy lives. With such a demand to keep getting things done, its no wonder there is an abundance of task management apps all promising to make our lives simpler and make us feel more accomplished.
+---
+But often, we mostly do tasks that are expected of us and are responsibilities from an outside source. We want to feel like we are being productive but in reality these tasks are sapping us of our time and energy to do something meaningful or are related to our personal goals. 
+---
+What does it really mean to be productive ? How can we better organize our time and accomplish what actually matters? 
+---
+We always have something to do in our busy lives. With such a demand to keep getting things done, its no wonder there is an abundance of task management apps all promising to make our lives simpler and make us feel more accomplished.
+---
+But often, we mostly do tasks that are expected of us and are responsibilities from an outside source. We want to feel like we are being productive but in reality these tasks are sapping us of our time and energy to do something meaningful or are related to our personal goals. 
+---
+What does it really mean to be productive ? How can we better organize our time and accomplish what actually matters? 
+---
+Interviews
+---
+Goal: 
+---
+Gain deeper insight on how users manage their time  
+---
+I went around my campus and asked people who feel like they aren't the best at task management whether I can interview them to learn more. 
+---
+â€œHow often do you achieve what matters to you personally day to day?â€
+---
+â€œI never feel like I have time for what I truly want to doâ€
+---
+"What are some of your difficulties in managing time?"
+---
+â€œItâ€™s often harder for me to start bigger tasks in the dayâ€
+---
+"How do you manage your tasks currently?"
+---
+â€œI often create a list of tasks in apps that is a little overambitious from what I can actually do. I like to think I can do it.â€
+---
+Pain Points
+---
+Users can often spend too much time working inefficiently, and it cuts into time for hobbies and enjoyment. 
+---
+It is common for people to lose focus quickly because there are so many distractions. 
+---
+It is hard for people to start their tasks, especially tasks that are longer and harder to accomplish 
+---
+Interviews
+---
+Goal: 
+---
+Gain deeper insight on how users manage their time   
+---
+I went around my campus and asked people who feel like they aren't the best at task management whether I can interview them to learn more. 
+---
+â€œHow often do you achieve what matters to you personally day to day?â€
+---
+â€œI never feel like I have time for what I truly want to doâ€
+---
+"What are some of your difficulties in managing time?"
+---
+â€œItâ€™s often harder for me to start bigger tasks in the dayâ€
+---
+"How do you manage your tasks currently vs. ideally?"
+---
+â€œI often create a list of tasks in apps that is a little overambitious from what I can actually do. I like to think I can do it.â€
+---
+Pain Points
+---
+Users can often spend too much time working inefficiently, and it cuts into time for hobbies and enjoyment. 
+---
+It is common for people to lose focus quickly because there are so many distractions. 
+---
+It is hard for people to start their tasks, especially tasks that are longer and harder to accomplish 
+---
+Competitor Analysis
+---
+Goal: 
+---
+Get an overview on how task management apps work
+---
+Before analyzing the competitors, I didn't find it useful to simply check a box on whether or not they have a feature. Instead, I judged the apps on how well they achieve certain values or goals that I believe are important for good task-building. 
+---
+Meaning
+- How well does the app make the user feel fullfilled with their tasks? Does it encourage better task creation? 
+---
+Motivation
+- Is there any support to complete or get started on tasks, whether it be through copy or information architecture? 
+---
+Organization
+- How is the app organized? Does it lead to better clarity and focus? 
+---
+Key Insights
+---
+Many task management apps make it very easy to create a new task, but doesn't help support getting them done. 
+---
+Task apps that provide more value in how to create a task like Ike are not as simple to manage and organize compared to a list . 
+---
+Personas
+---
+Goal: 
+---
+Build personas based on interviews to guide ideation 
+---
+Based on my interviews, I created two distinct personas that would be useful to find the best features to improve focus and save userâ€™s time.
+---
+Design Challenge
+---
+How can I encourage users to achieve more meaningful tasks and save them time and energy while still keeping the process of creating one simple? 
+---
+Sketches
+---
+Goal: 
+---
+Explore ideas to encourage accomplishing more meaningful tasks  
+---
+I ideated on possible ways this app could frame creating tasks in order to encourage accomplishing more meaningful ones. Through some sketches, I settled on two features, Little Step and Time Estimation, that could possibly improve performance.
+---
+Group tasks by their duration
+---
+Little Steps
+---
+Points
+---
+Ike Method
+---
+Focus Zone
+---
+Goals
+---
+Little Steps
+---
+The "MVP" of a task. If the user thinks of the smallest thing they can do to get started instead of the task as a whole, they would be more motivated to start, which is often the hardest part. 
+---
+Estimating time to finish  
+---
+If the user estimates how long they think a task will take to finish, they will have a much better understanding of how they are allocating the time in their day.
+---
+Sketches
+---
+Goal: 
+---
+Explore ideas to encourage accomplishing more meaningful tasks 
+---
+I ideated on possible ways this app would frame creating tasks in order to encourage accomplishing more meaningful ones. Through some sketches, I settled on two features, Little Step and estimating time to finish, that could possibly improve performance.
+---
+Group tasks by their duration
+---
+Little Steps
+---
+Points
+---
+Ike Method
+---
+Focus Zone
+---
+Goals
+---
+Little Steps
+---
+The "MVP" of a task. If the user thinks of the smallest thing they can do to get started instead of the task as a whole, they would be more motivated to start, which is often the hardest part. 
+---
+Estimating time to finish  
+---
+If the user estimates how long they think a task will take to finish, they will have a much better understanding of how they are allocating the time in their day.
+---
+Diary Study
+---
+Goal: 
+---
+Gain insight on how effective the features are over time 
+---
+How do I test whether these features would work without making a digital prototype? Well, the manual version of course! I asked users who donâ€™t feel very fulfilled with how much they accomplish every day to set three types of tasks. 
+---
+Task 1:
+ Simple task 
+---
+Task 2:
+ Task with a â€œLittle Stepâ€ 
+---
+Task 3:
+ Task with a â€œLittle Stepâ€ and goal 
+---
+For all these tasks, the user would also estimate how long they think this task would take them to accomplish. I gave my participants a Google doc so they can easily answer these questions every day on their own time. 
+---
+This study provided significant feedback on how effective these methods can be! "Little Steps" reduced how overwhelming a task feels while grouping the tasks by their estimated duration was greatly helpful in giving them a better awareness of their day. It even got my participants motivated to get the task done sooner, almost gamifying the experience by trying to beat their prediction!
+---
+Sitemap
+---
+Goal: 
+---
+Create information architecture based on tested features 
+---
+Based on the diary studies, it was clear that prioritizing the "little step" as opposed to the main task helped make it feel much more approachable, and breaking tasks down by their estimated duration helps users gain a clearer understanding as to how to manage their day. I created a sitemap prioritizing these features in the interface.
+---
+Wireframes
+---
+Goal:
+---
+Form basic low-fidelity wireframes for user testing.  
+---
+Design centered around Little Steps and Time Grouping
+---
+I set out to create a low-fidelity wireframe of an app implementing these features. I created a full page layout for creating a task, while making it easy to select the elements of the task (Priority, Category, Duration..). Using Marvel to test the prototypes, I gained some insights in how to improve the app.
+---
+Users were confused on what little steps meant, as the way I worded it in the task creation made them think it was simply a subtask which is not nearly as important. This is an important feature to improve because keeping the little step in the forefront of their mind helps decrease how daunting a task can feel.
+---
+Testing the Wireframes
+---
+Testing the Wireframes
+---
+Users were confused on what little steps meant, as the way I worded it in the task creation made them think it was simply a subtask which is not nearly as important. This is an important feature to improve because keeping the little step in the forefront of their mind, it is more effective in decreasing how daunting a task can feel.
+---
+Wireframes
+---
+Goal:
+---
+Form basic low-fidelity wireframes for user testing.  
+---
+Design centered around Little Steps and Time Grouping
+---
+I set out to create a low-fidelity wireframe of an app implementing these features. I created a full page layout for creating a task, while making it easy to select the elements of the task (Priority, Category, Duration..). Using Marvel to test the prototypes, I gained some insights in how to improve the app.
+---
+Testing the Wireframes
+---
+Users were confused on what little steps meant, as the way I worded it in the task creation made them think it was simply a subtask which is not nearly as important. This is an important aspect of the experience to improve because through my diary study, I confirmed that when users keep the little step in the forefront of their mind, it is more effective in decreasing how daunting a task can feel.
+---
+Testing the Wireframes
+---
+Users were confused on what little steps meant, as the way I worded it in the task creation made them think it was simply a subtask which is not nearly as important. This is an important aspect of the experience to improve because through my diary study, I confirmed that when users keep the little step in the forefront of their mind, there is a stronger effect of decreasing how daunting the task can feel.
+---
+Task Creation
+---
+Tasks Screen
+---
+Goals Screen
+---
+Final Testing
+---
+Goal: 
+---
+User test digital prototypes for ease of use and intuitiveness
+---
+After testing with users, I was delighted to see how well the little step worked! Placing it higher in the hierarchy than the main task indicated which one takes priority, and the organization really helped make their tasks feel less intimidating. Users appreciated how easy it was to organize tasks by time and priority, and how simple it is to get a solid grasp on their day and create tasks that matter. The colors also helped make an encouraging design.
+---
+Final Thoughts
+---
+Fallback
+---
+It makes sense that people would feel more fulfilled when what they accomplish in their day is relevant to their deeper interests. What's surprising is how easily the mind can be geared towards prioritizing it amidst the chaos of everything else. 
+---
+Users feel fulfilled and happy with their days if they have control, but what do they have control over? How is this productive energy used? These questions really drove my research and design, and it is amazing how the simple ways to think about our time can be a great asset in helping us accomplish what we truly want!
+---
+Let's connect!
+---
+I love working on interesting projects. If you like what you see, use the form on my contact page or use the 
+---
+Contact
+---
+ahmed.razin@nyu.edu
+---
+646-384-7503
+---
+@ razin68
+---
+@ ahmed-razin
+---
+Projects
+---
+Resume
+---
+About
+---
+Contact
+---
+
