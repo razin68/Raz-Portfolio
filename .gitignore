@@ -15,7 +15,9 @@
 
 # next.js
 /.next/
-/out/
+# NOTE: out/ is intentionally committed so CI can deploy the prebuilt static
+# site (this is a custom Next build that can't be reinstalled on a CI runner).
+# Run `npm run build` before committing to refresh it.
 
 # production
 /build

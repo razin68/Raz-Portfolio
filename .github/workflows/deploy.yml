@@ -1,33 +1,28 @@
 name: Deploy to DreamHost
 
+# Deploys the prebuilt static site in out/ to DreamHost over SSH.
+# Build locally with `npm run build` and commit out/ before pushing.
+# (This project uses a custom Next build that can't be reinstalled on a
+# clean CI runner, so the build does not run here.)
+
 on:
   push:
     branches: [main]
+    paths:
+      - "out/**"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
-# Avoid overlapping deploys
 concurrency:
   group: deploy-production
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "24"
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build static export
-        run: npm run build
 
       - name: Deploy out/ to DreamHost over SSH
         run: |

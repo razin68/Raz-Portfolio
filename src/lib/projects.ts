@@ -167,7 +167,7 @@ export const projects: Project[] = [
           "/projects/student-voice-system/research-flow.png",
           "/projects/student-voice-system/research-google.png",
         ],
-        mediaFull: ["/projects/student-voice-system/research-persona.png"],
+        mediaFull: ["/projects/student-voice-system/research-persona.jpg"],
         body:
           "Students were looking for answers the website wasn't providing. Choosing a graduate program is a decision about someone's future. Students need to visualize themselves in the program to know it's worth it. So they went elsewhere, searching Reddit and Google with questions like \"is the program actually good for research?\", \"what's grad student life really like?\", and \"are the PhD students happy?\"\n\nProgram facts only go so far. What they really want is someone who's already lived it.\n\nThis behavior maps onto a long, high-stakes journey: early coursework, entrance-exam prep, shadowing hours, research, applications. At every step the official site answered with institutional copy, while the real reassurance lived on third-party forums.",
         bullets: [
@@ -253,7 +253,7 @@ export const projects: Project[] = [
             caption: "Before: a few students as full-length essays, dense and hard to scan.",
           },
           after: {
-            image: "/projects/student-voice-system/student-perspectives-feed.png",
+            image: "/projects/student-voice-system/student-perspectives-feed.jpg",
             caption: "After: a scannable, photo-forward feed with previews and pagination.",
           },
         },
@@ -277,7 +277,7 @@ export const projects: Project[] = [
             caption: "Before: a dense intro and a long program list, with student stories buried at the bottom.",
           },
           after: {
-            image: "/projects/student-voice-system/category.png",
+            image: "/projects/student-voice-system/category.jpg",
             caption: "After: scannable program cards, a video intro, and a Student Spotlight in the nav.",
           },
         },
@@ -297,11 +297,11 @@ export const projects: Project[] = [
         beforeAfter: {
           title: "Old → New: the School of Medicine homepage.",
           before: {
-            image: "/projects/student-voice-system/smd-home-old.png",
+            image: "/projects/student-voice-system/smd-home-old.jpg",
             caption: "Before: a centennial banner and a dean's portrait, institution first.",
           },
           after: {
-            image: "/projects/student-voice-system/smd-home-new.png",
+            image: "/projects/student-voice-system/smd-home-new.jpg",
             caption: "After: a featured trainee story and student quote sharing the page with the stats.",
           },
         },
@@ -408,7 +408,7 @@ export const projects: Project[] = [
             body: "Scores roll up to the hypothesis level to compare baseline usability, proposed changes, and observed behavior.",
           },
         ],
-        wideImage: "/projects/ux-research-framework/airtable-framework.png",
+        wideImage: "/projects/ux-research-framework/airtable-framework.jpg",
         wideImageCaption:
           "The Airtable base: each observation logged as a quote, tagged against the code book, then scored for sentiment and severity.",
         pullQuotesLabel: "The score, in practice",
