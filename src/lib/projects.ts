@@ -117,6 +117,7 @@ export type Project = {
   role?: string
   mainGoal?: string
   status?: string
+  era?: "earlier"
   team?: string[]
   owned?: string[]
   outcomes?: string[]
@@ -665,6 +666,308 @@ export const projects: Project[] = [
         title: "The part that took convincing",
         body:
           "Every earlier attempt at a system had failed here, so the hard work was getting stakeholders to believe this one would hold. That was tougher, honestly, than designing the components. Good systems stay easy to trust, maintain, and scale once people buy in.",
+      },
+    ],
+  },
+  {
+    slug: "meal-tab",
+    title: "Meal Tab",
+    tagline:
+      "Helping grocery shoppers discover new recipes and find the ingredients, right in the aisle.",
+    tags: ["Mobile App", "UX Research", "Startup"],
+    era: "earlier",
+    timeline: "6 weeks · 2020",
+    gradient: "from-emerald-100 to-teal-200",
+    cover: "/projects/meal-tab/cover.png",
+    problem:
+      "Meal Tab didn't show recipes in an engaging way, and a shopper walking past couldn't tell what it was for.",
+    solution:
+      "I redesigned the app to spark curiosity and make recipes easy to browse in-store. When our in-store test fell apart, I reframed the study so it still produced the metrics the team needed.",
+    role: "UX Designer",
+    team: ["2 Engineers", "1 UX Designer (me)"],
+    owned: [
+      "Research synthesis",
+      "Personas",
+      "Information architecture",
+      "UI redesign",
+      "Remote usability testing (Maze)",
+    ],
+    outcomes: [
+      "79% of testers found the experience valuable",
+      "71% would switch supermarkets to use it",
+      "Landed an in-store pilot with Gristedes Supermarkets",
+      "Turned a failed in-store test into a remote study that still delivered data",
+    ],
+    sections: [
+      {
+        title: "The Background",
+        goal: "Understand why finding new meals in a store is hard",
+        mediaFull: ["/projects/meal-tab/confused-shopper.png"],
+        body:
+          "As many as 85% of shoppers don't know what they're cooking that night, and it's rarely something new. Most people save a recipe at home and then hunt for the ingredients. But supermarkets are big and confusingly laid out, so trying anything unfamiliar is a chore.\n\nCould there be an easier way to find new meals and make the trip itself more engaging?",
+      },
+      {
+        title: "Talking to Shoppers",
+        goal: "Learn how people really shop for meals",
+        stats: [{ value: "100", label: "shopper interviews" }],
+        body:
+          "With my team I ran 100 quick interviews with shoppers in the aisles. The same frustration kept surfacing: finding new recipes in a store takes more time and effort than it's worth, so people default to what they already know.",
+        quotes: [
+          { text: "Most of the time I stick to the ingredients I already know, because it's not worth the trouble and I just want to leave the store." },
+          { text: "I'm always asking employees where an item is if I've never bought it before. The signs don't give enough information." },
+          { text: "I like the idea of trying new meals, but finding something that tastes good and works for me just takes too much time." },
+        ],
+      },
+      {
+        title: "Two Kinds of Cook",
+        goal: "Turn the research into people we could design for",
+        mediaRow: [
+          "/projects/meal-tab/persona-explorer.jpg",
+          "/projects/meal-tab/persona-beginner.jpg",
+        ],
+        body:
+          "Two types showed up again and again: the Explorer, who wants new ideas, and the Beginner, who wants something doable. Different experience levels, same wish, to save time and find a good meal without the hassle.",
+      },
+      {
+        title: "Rethinking the Recipe Browse",
+        goal: "Make a growing recipe collection easy to navigate",
+        images: [
+          "/projects/meal-tab/information-architecture.png",
+          "/projects/meal-tab/recipe-details.png",
+        ],
+        body:
+          "The original screen had a single recipe category, which fell apart as the collection grew, and the cards didn't carry enough useful information. People filter recipes in many ways, and the same person filters differently day to day, so I put the sub-categories on one flat hierarchy and led with recipes under 30 minutes to respect shoppers' time.",
+      },
+      {
+        title: "When In-Store Testing Failed",
+        goal: "Salvage real signal from a broken test",
+        images: ["/projects/meal-tab/welcome-redesign.jpg"],
+        stats: [
+          { value: "79%", label: "would explore the interface (8–10 of 10)" },
+          { value: "77%", label: "found recipes very easy to explore" },
+        ],
+        body:
+          "Three weeks in, we finally tested in a store, and it was a mess: the build was buggy and testing people mid-shop was awkward. Instead of forcing it, I pulled the team back to our actual goal, metrics that would convince store owners, and asked a smaller question: would shoppers even try this if they saw it?\n\nWe rebuilt the welcome screen to earn that first glance and tested it remotely with 50 users in Maze, with the tablet mocked up as if attached to a cart. People dove in straight from the welcome screen, so I made the old \"how it works\" overview optional and cut the friction.",
+      },
+      {
+        title: "Into a Real Store",
+        goal: "Use the data to open a door",
+        images: ["/projects/meal-tab/gristedes.jpg"],
+        body:
+          "The redesign and the numbers earned us a pilot with Gristedes Supermarkets in the West Village, where we could show a clear path to higher conversion for the store and an experience customers actually wanted to use.",
+      },
+    ],
+    impactBody:
+      "Store owners want to stand out and make the trip more valuable. Shoppers want to feel in control of a dizzying store and find their next meal. The redesign moved both, and gave us the evidence to pitch it.",
+    impactStats: [
+      { value: "79%", label: "found the experience valuable to their needs" },
+      { value: "71%", label: "would switch supermarkets to use Meal Tab" },
+      { value: "1", label: "in-store pilot secured (Gristedes)" },
+    ],
+    testimonials: [
+      "It would save me time when I look for something I've never bought before, and it would probably help me discover new foods.",
+      "Something like this could really help me think of recipes while I shop and plan meals for the week.",
+      "If the prices were the same, I'd choose a new store over my regular one if it had this app.",
+    ],
+    reflection: [
+      {
+        title: "Protect the goal, not the plan",
+        body:
+          "The in-store test failing felt like the project failing. It wasn't. Stepping back to the real goal, evidence for store owners, turned a bad week into a cleaner study and a better result. The plan is disposable; the goal isn't.",
+      },
+    ],
+  },
+  {
+    slug: "indoor-buddy",
+    title: "Indoor Buddy Website",
+    tagline:
+      "Rebuilding our startup's site to sell Meal Tab to store owners and lift demo conversions.",
+    tags: ["Web Design", "Conversion", "Front-End"],
+    era: "earlier",
+    timeline: "6 weeks · 2020",
+    gradient: "from-sky-100 to-blue-200",
+    cover: "/projects/indoor-buddy/cover.jpg",
+    problem:
+      "Our site had almost no traffic and didn't convert grocery-store owners into demo requests, the buy-in we needed to test Meal Tab in real stores.",
+    solution:
+      "A rebuilt marketing site that makes the value obvious, backs it with real user-interest metrics, and makes requesting a demo effortless. I designed and built it.",
+    role: "UX Designer & Front-End",
+    team: ["3-person team"],
+    owned: [
+      "UX audit",
+      "Content strategy",
+      "Information hierarchy",
+      "Wireframes & visual design",
+      "Build (HTML, CSS, JS, Bootstrap)",
+    ],
+    outcomes: [
+      "400% increase in info-request emails",
+      "+24% demo-request conversion",
+      "Inbound interest from Around the World Market and Gristedes",
+    ],
+    sections: [
+      {
+        title: "The Goals",
+        goal: "Decide what the site actually needed to do",
+        body:
+          "To improve the product we needed store owners to let us demo it in their stores. I talked with Brandon, a manager at Brooklyn Fare, to understand what owners worry about with a product like this on their floor. Three needs came out of it.",
+        bullets: [
+          "Show how Meal Tab can drive revenue, fast and obviously.",
+          "Prove shoppers would actually use it if they saw it in store.",
+          "Say what the product is, as clearly and briefly as possible.",
+        ],
+      },
+      {
+        title: "UX Audit",
+        goal: "Judge the current site against those goals",
+        images: ["/projects/indoor-buddy/ux-audit.png"],
+        body:
+          "I started by auditing the existing site against our goals and basic UX best practices, flagging exactly where it lost a store owner's attention or failed to make the case.",
+      },
+      {
+        title: "Proof It Would Work",
+        goal: "Give owners evidence, not just claims",
+        stats: [
+          { value: "79%", label: "would be likely to explore the interface in a store" },
+          { value: "66%", label: "would switch supermarkets for the experience" },
+        ],
+        body:
+          "An owner making an investment wants proof of demand. We'd tested Meal Tab with many users online, so I put the strongest numbers right on the site. I also produced a short demo video, after Brandon said seeing a shopper actually use it would help, that frames the problem and shows the solution.",
+      },
+      {
+        title: "Information Hierarchy",
+        goal: "Lead with what store owners care about",
+        images: ["/projects/indoor-buddy/information-hierarchy.png"],
+        body:
+          "With the content gathered, I mapped a layout around the owner's concerns and gave each its own section.",
+        bullets: [
+          "Function: what the product does, findable in seconds.",
+          "Revenue: about 44% of shoppers look for promotions digitally, so guided shoppers buy more.",
+          "Product mechanism: how the system works and how it attaches to a cart.",
+        ],
+      },
+      {
+        title: "From Wireframe to a Built Site",
+        goal: "Ship a responsive site in six weeks",
+        mediaRow: [
+          "/projects/indoor-buddy/wireframe.png",
+          "/projects/indoor-buddy/website-final.png",
+        ],
+        body:
+          "With six weeks, I started from wireframes over the existing structure, then iterated to high fidelity with the team. Instead of a catch-all \"Contact Us,\" I designed a clear demo-request CTA we could actually measure. I built it responsive with Bootstrap, wrote JavaScript to play and pause the demo video as it scrolls into view, and used AOS to animate elements on scroll.",
+      },
+    ],
+    impactBody:
+      "The new site did its job: a real jump in inbound interest and demo requests, including Around the World Market (one of the largest grocers in the NC tri-state area) reaching out, plus a scheduled demo with Gristedes.",
+    impactStats: [
+      { value: "400%", label: "more emails requesting information" },
+      { value: "+24%", label: "conversion to demo requests" },
+    ],
+    reflection: [
+      {
+        title: "Sell the outcome, not the feature",
+        body:
+          "Store owners didn't care about the app's cleverness. They cared about revenue and proof. Leading with their outcome, backed by real numbers, did more than any amount of polish.",
+      },
+    ],
+  },
+  {
+    slug: "first-steps",
+    title: "First Steps",
+    tagline:
+      "A task app that shrinks a big task down to its first small step, so you'll actually start.",
+    tags: ["Mobile App", "UX Research", "Academic"],
+    era: "earlier",
+    timeline: "3.5 months · 2018",
+    gradient: "from-amber-100 to-yellow-200",
+    cover: "/projects/first-steps/cover.jpg",
+    problem:
+      "It's hard to start and finish the tasks that actually matter. The bigger and more meaningful a task, the easier it is to avoid.",
+    solution:
+      "First Steps groups tasks by how long they'll take and nudges you to name the very first step, which makes a daunting task feel approachable enough to begin.",
+    role: "Solo, end-to-end (UX class)",
+    owned: [
+      "Research & interviews",
+      "Competitor analysis",
+      "Personas",
+      "Diary study",
+      "Wireframing & prototyping",
+      "Usability testing",
+    ],
+    outcomes: [
+      "Validated two features (Little Steps + time grouping) with a diary study before building anything",
+      "Final testing showed tasks felt less intimidating and days easier to plan",
+    ],
+    sections: [
+      {
+        title: "Research",
+        goal: "Understand what gets in the way of meaningful work",
+        mediaFull: ["/projects/first-steps/process.png"],
+        body:
+          "There's no shortage of task apps promising to make us productive. But much of what we do is what's expected of us, draining time from what actually matters. I wanted to dig into what it really means to be productive, and how an app could help people spend time on what they care about.",
+      },
+      {
+        title: "Interviews & Pain Points",
+        goal: "Hear how people manage their time",
+        body:
+          "I interviewed people on campus who felt they struggled with task management. A clear pattern emerged around starting, focus, and overcommitting.",
+        quotes: [
+          { question: "How often do you achieve what matters to you personally, day to day?", text: "I never feel like I have time for what I truly want to do." },
+          { question: "What's hardest about managing your time?", text: "It's often harder for me to start the bigger tasks in the day." },
+          { question: "How do you manage tasks now?", text: "I make a list that's a little overambitious for what I can actually do. I like to think I can do it." },
+        ],
+        bullets: [
+          "People lose time to inefficient work, cutting into hobbies and rest.",
+          "Focus breaks easily with so many distractions.",
+          "Starting is the hard part, especially for longer, harder tasks.",
+        ],
+      },
+      {
+        title: "Competitor Analysis",
+        goal: "See where task apps fall short",
+        body:
+          "Rather than checking off features, I judged apps on what makes task-building actually work: how meaningful they help your tasks feel, how much they motivate you to start, and how clearly they're organized.",
+        bullets: [
+          "Most apps make creating a task easy but do little to help you finish it.",
+          "Apps that add meaning to task creation tend to get harder to organize.",
+        ],
+      },
+      {
+        title: "Two Features Worth Testing",
+        goal: "Target the start, and the sense of time",
+        body:
+          "Sketching toward the problem, I landed on two ideas. Little Steps is the smallest thing you can do to get going, the MVP of a task, because starting is the hardest part. Time estimation asks you to guess how long a task will take, which builds a clearer sense of how your day is actually spent.",
+      },
+      {
+        title: "Diary Study",
+        goal: "Test the ideas before building anything",
+        body:
+          "Instead of jumping to a prototype, I tested the features by hand. Participants who felt unfulfilled with their days logged three kinds of task (simple, with a Little Step, and with a Little Step plus a goal) and estimated each one's duration in a shared doc.\n\nIt worked. Little Steps made tasks feel less overwhelming, and grouping by estimated time gave people a much better read on their day, even gamifying it as they tried to beat their own estimates.",
+      },
+      {
+        title: "Wireframes & Testing",
+        goal: "Put the validated features into an interface",
+        body:
+          "I built low-fidelity wireframes around Little Steps and time grouping and tested them in Marvel. The wording tripped people up: framed inside task creation, \"little step\" read like a minor subtask rather than the point. Keeping it front and center is what makes a task feel less daunting, so that became the thing to fix.",
+      },
+      {
+        title: "Final Design",
+        goal: "Make the day feel manageable",
+        mediaRow: [
+          "/projects/first-steps/screen-5.png",
+          "/projects/first-steps/screen-3.png",
+        ],
+        body:
+          "In the final design, the Little Step sits above the main task to signal what takes priority, and tasks group by how long they take. In testing, people found it easy to organize by time and priority, and their days felt less intimidating and easier to grasp.",
+      },
+    ],
+    impactBody:
+      "People feel more fulfilled when what they finish connects to what they actually care about. The surprising part is how small a nudge it takes: name the first step, see the time, and a daunting day becomes a manageable one.",
+    reflection: [
+      {
+        title: "Test the idea before the pixels",
+        body:
+          "The diary study taught me more than any prototype could have, and it cost nothing but a shared doc. Validating the concept by hand first meant the design started from something I already knew worked.",
       },
     ],
   },

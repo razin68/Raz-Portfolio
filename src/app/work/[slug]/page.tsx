@@ -54,6 +54,11 @@ export default async function CaseStudyPage({ params }: Props) {
 
         <FadeIn delay={0.2}>
           <div className="flex flex-wrap gap-2 mb-6">
+            {project.era === "earlier" && (
+              <span className="text-xs text-[#8A847D] border border-[#E5E0D8] bg-[#EDE7DD] rounded-full px-3 py-1">
+                Earlier work{project.timeline ? ` · ${project.timeline}` : ""}
+              </span>
+            )}
             {project.tags.map((tag) => (
               <span
                 key={tag}
@@ -657,12 +662,7 @@ export default async function CaseStudyPage({ params }: Props) {
                     (section.flow && section.flow.length > 0) ||
                     (section.hypotheses && section.hypotheses.length > 0) ||
                     (section.reframes && section.reframes.length > 0) ||
-                    (section.learnings && section.learnings.length > 0) ? null : (
-                    <div className={`relative mt-4 w-full aspect-[16/9] rounded-xl overflow-hidden bg-gradient-to-br ${project.gradient} opacity-50`}>
-                      <div className="absolute inset-0 mesh" />
-                      <div className="absolute inset-0 grain-soft" />
-                    </div>
-                  )}
+                    (section.learnings && section.learnings.length > 0) ? null : null}
 
                   {section.pullQuotes && section.pullQuotes.length > 0 && !section.wideImage && (
                     <div className="mt-4 flex flex-col gap-7">
