@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef } from "react"
-import Image from "next/image"
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion"
 import { FadeIn } from "@/components/FadeIn"
 import { RevealText } from "@/components/RevealText"
@@ -26,22 +25,18 @@ export function Hero() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-end overflow-hidden">
-      {/* Photo: zooms toward the figure (~38% / 30%) on scroll. next/image serves
-          responsive AVIF/WebP; the zoom transform rides on the wrapper. */}
-      <motion.div
+      {/* Photo: zooms toward the figure (~38% / 30%) on scroll. Responsive
+          srcset so large/retina screens get a crisp source. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <motion.img
+        src="/personal/shadow-seaport-2000.jpg"
+        srcSet="/personal/shadow-seaport-1200.jpg 1200w, /personal/shadow-seaport-2000.jpg 2000w, /personal/shadow-seaport-3000.jpg 3000w"
+        sizes="100vw"
+        alt="Street photograph by Ahmed Razin, a silhouette in raking light, South Street Seaport, New York"
+        fetchPriority="high"
         style={reduce ? undefined : { scale, y: imgY, transformOrigin: "38% 30%" }}
-        className="absolute inset-0"
-      >
-        <Image
-          src="/personal/shadow-seaport.jpg"
-          alt="Street photograph by Ahmed Razin, a silhouette in raking light, South Street Seaport, New York"
-          fill
-          preload
-          quality={90}
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-      </motion.div>
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
       {/* Legibility scrim: lightens as the headline fades */}
       <motion.div
         style={reduce ? undefined : { opacity: scrimOpacity }}
