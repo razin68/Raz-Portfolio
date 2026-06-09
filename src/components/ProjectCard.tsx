@@ -66,7 +66,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               src={project.cover}
               alt={project.title}
               loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className={`absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.03] ${
+                project.coverContain
+                  ? "object-contain object-center p-6 sm:p-8"
+                  : "object-cover"
+              }`}
             />
           ) : (
             <>
