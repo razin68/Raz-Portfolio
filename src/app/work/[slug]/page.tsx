@@ -99,12 +99,21 @@ export default async function CaseStudyPage({ params }: Props) {
       <FadeIn delay={0.4}>
         {project.cover ? (
           <div className="max-w-4xl mx-auto px-6 mb-20">
-            <figure className="aspect-[3/2] overflow-hidden rounded-xl border border-[#E5E0D8] shadow-sm">
+            <figure
+              className={`relative aspect-[3/2] overflow-hidden rounded-xl border border-[#E5E0D8] shadow-sm ${
+                project.coverContain ? `bg-gradient-to-br ${project.gradient}` : ""
+              }`}
+            >
+              {project.coverContain && <div className="absolute inset-0 mesh opacity-60" />}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={project.cover}
                 alt={`${project.title}: cover`}
-                className="block h-full w-full object-cover object-center"
+                className={`relative block h-full w-full ${
+                  project.coverContain
+                    ? "object-contain object-center p-6 sm:p-10"
+                    : "object-cover object-center"
+                }`}
               />
             </figure>
           </div>
@@ -608,7 +617,11 @@ export default async function CaseStudyPage({ params }: Props) {
                     (section.images && section.images.length > 0) ? (
                     <div className="mt-4 flex flex-col gap-6">
                       {section.mediaRow && section.mediaRow.length > 0 && (
-                        <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:justify-center sm:gap-10">
+                        <div
+                          className={`grid gap-6 ${
+                            section.mediaRow.length > 1 ? "sm:grid-cols-2" : ""
+                          }`}
+                        >
                           {section.mediaRow.map((src, k) => (
                             // eslint-disable-next-line @next/next/no-img-element
                             <img
@@ -616,7 +629,7 @@ export default async function CaseStudyPage({ params }: Props) {
                               src={src}
                               alt={`${section.title}: visual ${k + 1}`}
                               loading="lazy"
-                              className="w-auto max-w-full object-contain sm:h-[24rem]"
+                              className="block w-full h-auto rounded-lg"
                             />
                           ))}
                         </div>
@@ -634,10 +647,7 @@ export default async function CaseStudyPage({ params }: Props) {
                         ))}
                       {section.images &&
                         section.images.map((src, k) => (
-                          <figure
-                            key={k}
-                            className="overflow-hidden rounded-xl border border-[#E5E0D8] bg-white shadow-sm"
-                          >
+                          <figure key={k} className="overflow-hidden rounded-xl">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                               src={src}

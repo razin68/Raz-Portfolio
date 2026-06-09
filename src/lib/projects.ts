@@ -111,6 +111,7 @@ export type Project = {
   timeline?: string
   gradient: string
   cover?: string
+  coverContain?: boolean
   hero?: string
   problem: string
   solution: string
@@ -679,6 +680,7 @@ export const projects: Project[] = [
     timeline: "6 weeks · 2020",
     gradient: "from-emerald-100 to-teal-200",
     cover: "/projects/meal-tab/cover.png",
+    coverContain: true,
     problem:
       "Meal Tab didn't show recipes in an engaging way, and a shopper walking past couldn't tell what it was for.",
     solution:
@@ -719,9 +721,9 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Two Kinds of Cook",
+        title: "Two Kinds of Cooks",
         goal: "Turn the research into people we could design for",
-        mediaRow: [
+        mediaFull: [
           "/projects/meal-tab/persona-explorer.jpg",
           "/projects/meal-tab/persona-beginner.jpg",
         ],
@@ -909,6 +911,10 @@ export const projects: Project[] = [
       {
         title: "Interviews & Pain Points",
         goal: "Hear how people manage their time",
+        mediaRow: [
+          "/projects/first-steps/interview-1.jpg",
+          "/projects/first-steps/interview-2.jpg",
+        ],
         body:
           "I interviewed people on campus who felt they struggled with task management. A clear pattern emerged around starting, focus, and overcommitting.",
         quotes: [
@@ -925,6 +931,7 @@ export const projects: Project[] = [
       {
         title: "Competitor Analysis",
         goal: "See where task apps fall short",
+        mediaFull: ["/projects/first-steps/competitor-analysis.png"],
         body:
           "Rather than checking off features, I judged apps on what makes task-building actually work: how meaningful they help your tasks feel, how much they motivate you to start, and how clearly they're organized.",
         bullets: [
@@ -933,20 +940,33 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Two Features Worth Testing",
+        title: "Personas",
+        goal: "Design for real people, not an average",
+        mediaFull: [
+          "/projects/first-steps/persona-1.jpg",
+          "/projects/first-steps/persona-2.jpg",
+        ],
+        body:
+          "From the interviews I built two personas to keep ideation honest: people who want their days to feel meaningful, but get stuck starting and lose focus along the way.",
+      },
+      {
+        title: "Sketching the Features",
         goal: "Target the start, and the sense of time",
+        mediaFull: ["/projects/first-steps/sketches.jpg"],
         body:
           "Sketching toward the problem, I landed on two ideas. Little Steps is the smallest thing you can do to get going, the MVP of a task, because starting is the hardest part. Time estimation asks you to guess how long a task will take, which builds a clearer sense of how your day is actually spent.",
       },
       {
         title: "Diary Study",
         goal: "Test the ideas before building anything",
+        mediaFull: ["/projects/first-steps/diary-study.jpg"],
         body:
           "Instead of jumping to a prototype, I tested the features by hand. Participants who felt unfulfilled with their days logged three kinds of task (simple, with a Little Step, and with a Little Step plus a goal) and estimated each one's duration in a shared doc.\n\nIt worked. Little Steps made tasks feel less overwhelming, and grouping by estimated time gave people a much better read on their day, even gamifying it as they tried to beat their own estimates.",
       },
       {
         title: "Wireframes & Testing",
         goal: "Put the validated features into an interface",
+        mediaFull: ["/projects/first-steps/wireframe-sketches.jpg"],
         body:
           "I built low-fidelity wireframes around Little Steps and time grouping and tested them in Marvel. The wording tripped people up: framed inside task creation, \"little step\" read like a minor subtask rather than the point. Keeping it front and center is what makes a task feel less daunting, so that became the thing to fix.",
       },
@@ -957,6 +977,7 @@ export const projects: Project[] = [
           "/projects/first-steps/screen-5.png",
           "/projects/first-steps/screen-3.png",
         ],
+        images: ["/projects/first-steps/user-testing.jpg"],
         body:
           "In the final design, the Little Step sits above the main task to signal what takes priority, and tasks group by how long they take. In testing, people found it easy to organize by time and priority, and their days felt less intimidating and easier to grasp.",
       },
