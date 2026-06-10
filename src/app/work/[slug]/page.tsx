@@ -616,23 +616,38 @@ export default async function CaseStudyPage({ params }: Props) {
                     (section.mediaFull && section.mediaFull.length > 0) ||
                     (section.images && section.images.length > 0) ? (
                     <div className="mt-4 flex flex-col gap-6">
-                      {section.mediaRow && section.mediaRow.length > 0 && (
-                        <div
-                          className={`grid gap-6 ${
-                            section.mediaRow.length > 1 ? "sm:grid-cols-2" : ""
-                          }`}
-                        >
-                          {section.mediaRow.map((src, k) => (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img
-                              key={`row-${k}`}
-                              src={src}
-                              alt={`${section.title}: visual ${k + 1}`}
-                              loading="lazy"
-                              className="block w-full h-auto rounded-lg"
-                            />
-                          ))}
-                        </div>
+                  {section.mediaRow && section.mediaRow.length > 0 && (
+                        section.mediaRowEqualHeight ? (
+                          <div className="flex flex-col items-center justify-center gap-8 sm:flex-row sm:items-center sm:gap-10">
+                            {section.mediaRow.map((src, k) => (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img
+                                key={`row-${k}`}
+                                src={src}
+                                alt={`${section.title}: visual ${k + 1}`}
+                                loading="lazy"
+                                className="h-auto w-auto max-w-full object-contain rounded-lg sm:h-[22rem]"
+                              />
+                            ))}
+                          </div>
+                        ) : (
+                          <div
+                            className={`grid gap-6 ${
+                              section.mediaRow.length > 1 ? "sm:grid-cols-2" : ""
+                            }`}
+                          >
+                            {section.mediaRow.map((src, k) => (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img
+                                key={`row-${k}`}
+                                src={src}
+                                alt={`${section.title}: visual ${k + 1}`}
+                                loading="lazy"
+                                className="block w-full h-auto rounded-lg"
+                              />
+                            ))}
+                          </div>
+                        )
                       )}
                       {section.mediaFull &&
                         section.mediaFull.map((src, k) => (

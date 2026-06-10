@@ -93,7 +93,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             className="absolute inset-0 flex items-end p-5"
             style={{ transform: "translateZ(35px)" }}
           >
-            <span className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-[#1A1714] bg-[#F8F5F0]/90 backdrop-blur-sm rounded-full px-3.5 py-2 shadow-sm ring-1 ring-black/5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+            <span className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-[#1A1714] bg-[#F8F5F0]/55 backdrop-blur-md rounded-full px-3.5 py-2 ring-1 ring-black/5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
               View case study
               <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
             </span>

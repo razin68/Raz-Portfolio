@@ -63,6 +63,7 @@ export type Section = {
   statsTop?: boolean
   images?: string[]
   mediaRow?: string[]
+  mediaRowEqualHeight?: boolean
   mediaFull?: string[]
   pullQuotes?: {
     text: string
@@ -169,6 +170,7 @@ export const projects: Project[] = [
           "/projects/student-voice-system/research-flow.png",
           "/projects/student-voice-system/research-google.png",
         ],
+        mediaRowEqualHeight: true,
         mediaFull: ["/projects/student-voice-system/research-persona.jpg"],
         body:
           "Students were looking for answers the website wasn't providing. Choosing a graduate program is a decision about someone's future. Students need to visualize themselves in the program to know it's worth it. So they went elsewhere, searching Reddit and Google with questions like \"is the program actually good for research?\", \"what's grad student life really like?\", and \"are the PhD students happy?\"\n\nProgram facts only go so far. What they really want is someone who's already lived it.\n\nThis behavior maps onto a long, high-stakes journey: early coursework, entrance-exam prep, shadowing hours, research, applications. At every step the official site answered with institutional copy, while the real reassurance lived on third-party forums.",
