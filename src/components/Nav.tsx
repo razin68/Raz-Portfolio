@@ -59,7 +59,7 @@ export function Nav() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`group relative text-sm transition-colors ${
-                  onDark ? "text-white/75 hover:text-white" : "text-[#8A847D] hover:text-[#1A1714]"
+                  onDark ? "text-white/75 hover:text-white" : "text-[#736E67] hover:text-[#1A1714]"
                 }`}
               >
                 {label}
@@ -76,7 +76,7 @@ export function Nav() {
                       : "text-[#1A1714]"
                     : onDark
                       ? "text-white/75 hover:text-white"
-                      : "text-[#8A847D] hover:text-[#1A1714]"
+                      : "text-[#736E67] hover:text-[#1A1714]"
                 }`}
               >
                 {label}
@@ -94,7 +94,7 @@ export function Nav() {
 
         {/* Mobile menu button */}
         <button
-          className={`sm:hidden p-2 ${onDark ? "text-white" : "text-[#1A1714]"}`}
+          className={`sm:hidden -mr-1 p-3 ${onDark ? "text-white" : "text-[#1A1714]"}`}
           onClick={() => setMenuOpen((o) => !o)}
           aria-label="Toggle menu"
         >
@@ -122,7 +122,7 @@ export function Nav() {
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="sm:hidden overflow-hidden bg-[#F8F5F0] border-t border-[#E5E0D8]"
           >
-            <div className="px-6 py-4 flex flex-col gap-4">
+            <div className="px-6 py-3 flex flex-col gap-1">
               {links.map(({ href, label, external }) =>
                 external ? (
                   <a
@@ -130,7 +130,7 @@ export function Nav() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-[#8A847D]"
+                    className="py-2 text-base text-[#736E67]"
                   >
                     {label}
                   </a>
@@ -138,7 +138,7 @@ export function Nav() {
                   <Link
                     key={href}
                     href={href}
-                    className={`text-sm ${pathname === href ? "text-[#1A1714]" : "text-[#8A847D]"}`}
+                    className={`py-2 text-base ${pathname === href ? "text-[#1A1714]" : "text-[#736E67]"}`}
                   >
                     {label}
                   </Link>

@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://ahmedrazin.me
+Sitemap: https://ahmedrazin.me/sitemap.xml

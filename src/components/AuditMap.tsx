@@ -3,7 +3,7 @@
 // pages, with the student voice nested deepest and faded.
 const INK = "#1A1714"
 const ACCENT = "#C44B20"
-const MUTED = "#8A847D"
+const MUTED = "#736E67"
 const OFFICIAL_FILL = "#EDEDEA"
 const OFFICIAL_BORDER = "#DBD6CD"
 const LINE = "#D3CEC5"

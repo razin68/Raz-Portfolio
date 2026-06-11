@@ -79,15 +79,15 @@ export default function AboutPage() {
             <div className="flex flex-col gap-6">
               <p className="text-xl leading-relaxed text-[#1A1714]">
                 I&apos;m a UX designer and researcher. For five years I&apos;ve worked in
-                healthcare, the high-stakes kind, building research systems, clinical design
-                systems, and the evidence teams need to make good calls.
+                healthcare, the high-stakes kind, building research infrastructure and clinical
+                design systems, and the evidence a team needs to make good calls.
               </p>
               <p className="text-xl leading-relaxed text-[#1A1714]">
-                I do my best work in the messy middle, where you have to win people over,
-                learn the clinical side, and trust your own read of the research. In practice
-                that has meant reframing a problem leadership had misdiagnosed, building a
-                quantified research framework from scratch, and getting enough of the room
-                aligned that the good decision actually ships.
+                My best work happens in the messy middle, where the job is to win people over
+                while learning the clinical side and trusting your own read of the research. In
+                practice that has meant reframing a problem leadership had misdiagnosed, building a
+                quantified research framework from nothing, and getting enough of the room
+                aligned for the good decision to ship.
               </p>
             </div>
             <figure className="overflow-hidden rounded-xl border border-[#E5E0D8]">
@@ -110,21 +110,21 @@ export default function AboutPage() {
             >
               My Process
             </h2>
-            <p className="text-base leading-relaxed text-[#8A847D] mb-6">
-              I try to be deliberate, and to stay flexible. I start by making sure I&apos;m
-              solving the right problem, which often means reframing how it was first handed to me.
-              Then I do the research to produce answers a team can actually act on. I believe{" "}
+            <p className="text-base leading-relaxed text-[#736E67] mb-6">
+              Deliberate, but flexible. I start by making sure the problem is the right one,
+              which often means reframing how it first arrived. The research comes next, aimed
+              at answers a team can act on. I believe{" "}
               <span className="text-[#1A1714]">design decisions get made on opinion until you
-              build the infrastructure to make them on evidence</span>, so I&apos;ve built that
-              infrastructure: weighted research frameworks, design systems, and documentation
-              that teams trust enough to use.
+              build the infrastructure to make them on evidence</span>, so I&apos;ve built it:
+              the weighted research frameworks and design systems and documentation a team
+              trusts enough to use.
             </p>
-            <p className="text-base leading-relaxed text-[#8A847D]">
-              In practice there are always constraints: tight timelines, technical limits,
-              and stakeholders to bring along. So I apply the method that makes the most sense
-              for the problem in its context. Currently, I&apos;m a UX designer at an academic
-              medical center, where I lead research and design systems work for digital
-              experiences used by over a million patients.
+            <p className="text-base leading-relaxed text-[#736E67]">
+              Constraints are always there, whether tight timelines, technical limits, or
+              stakeholders to bring along. I pick the method that fits the problem in its
+              context. Today I&apos;m a UX designer at the University of Rochester Medical
+              Center, leading research and design-systems work for digital experiences used by
+              more than a million patients.
             </p>
           </div>
         </FadeInOnScroll>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {processGroups.map((group) => (
                 <div key={group.label}>
-                  <h3 className="text-xs tracking-widest uppercase text-[#8A847D] mb-4">
+                  <h3 className="text-xs tracking-widest uppercase text-[#736E67] mb-4">
                     {group.label}
                   </h3>
                   <ul className="flex flex-col gap-2">
@@ -173,11 +173,11 @@ export default function AboutPage() {
             >
               In my spare time...
             </h2>
-            <p className="text-base leading-relaxed text-[#8A847D] max-w-2xl">
-              Outside of work, I&apos;m usually outside. I ride a lot, on roads and gravel,
-              and I&apos;ll happily go out of my way for a good trail or a good view. I go to
-              concerts, I hike, and I almost always have a camera on me. Putting myself
-              somewhere new and just absorbing it is how I stay inspired.
+            <p className="text-base leading-relaxed text-[#736E67] max-w-2xl">
+              Outside of work, I&apos;m usually outside. Most of my miles are on a bike, road
+              and gravel both, and a good trail or a good view is worth the detour. Concerts,
+              hikes, a camera almost always in hand. Dropping myself somewhere new and taking it
+              in is how I stay inspired.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <figure className="overflow-hidden rounded-xl border border-[#E5E0D8]">
@@ -188,7 +188,7 @@ export default function AboutPage() {
                   loading="lazy"
                   className="block aspect-[4/5] w-full object-cover object-center"
                 />
-                <figcaption className="px-4 py-3 text-sm text-[#8A847D]">
+                <figcaption className="px-4 py-3 text-sm text-[#736E67]">
                   Out on the bike.
                 </figcaption>
               </figure>
@@ -200,7 +200,7 @@ export default function AboutPage() {
                   loading="lazy"
                   className="block aspect-[4/5] w-full object-cover object-center"
                 />
-                <figcaption className="px-4 py-3 text-sm text-[#8A847D]">
+                <figcaption className="px-4 py-3 text-sm text-[#736E67]">
                   Thinking it over.
                 </figcaption>
               </figure>
@@ -216,11 +216,11 @@ export default function AboutPage() {
             >
               Through my lens
             </h2>
-            <p className="text-base leading-relaxed text-[#8A847D] max-w-2xl mb-8">
+            <p className="text-base leading-relaxed text-[#736E67] max-w-2xl mb-8">
               Photography is how I pay attention. Most of what I shoot is street work around
-              New York, the light, the shadows, the small moments on a corner. It keeps my
-              eye sharp for how people actually move through a space, which turns out to be
-              most of the day job too.
+              New York, chasing the light and the shadows and the small moments on a corner. It
+              keeps my eye sharp for how people move through a space, which turns out to be most
+              of the day job too.
             </p>
             <figure className="overflow-hidden rounded-xl border border-[#E5E0D8]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -228,6 +228,8 @@ export default function AboutPage() {
                 src="/personal/photography-gallery.jpg"
                 alt="A grid of Ahmed's street photography from around New York"
                 loading="lazy"
+                width={1580}
+                height={1258}
                 className="block w-full h-auto"
               />
             </figure>
@@ -236,7 +238,7 @@ export default function AboutPage() {
 
         <FadeInOnScroll>
           <div className="border-t border-[#E5E0D8] pt-12">
-            <h2 className="text-xs tracking-widest uppercase text-[#8A847D] mb-8">
+            <h2 className="text-xs tracking-widest uppercase text-[#736E67] mb-8">
               Let&apos;s connect
             </h2>
             <div className="flex flex-col gap-3">
@@ -252,7 +254,7 @@ export default function AboutPage() {
               >
                 linkedin.com/in/ahmrazin
               </a>
-              <p className="text-base text-[#8A847D]">(646) 384-7503</p>
+              <p className="text-base text-[#736E67]">(646) 384-7503</p>
             </div>
           </div>
         </FadeInOnScroll>

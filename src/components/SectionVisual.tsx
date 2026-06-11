@@ -3,7 +3,7 @@
 
 const INK = "#1A1714"
 const ACCENT = "#C44B20"
-const MUTED = "#8A847D"
+const MUTED = "#736E67"
 const BORDER = "#E5E0D8"
 const CARD = "rgba(255,255,255,0.96)"
 const LINE = "#CFC7BB"

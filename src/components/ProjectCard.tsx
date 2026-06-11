@@ -105,12 +105,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           {(project.tags.length > 0 || project.year) && (
             <div className="flex items-center gap-2 mb-1">
               {project.tags.slice(0, 2).map((tag) => (
-                <span key={tag} className="text-xs text-[#8A847D] tracking-wide">
+                <span key={tag} className="text-xs text-[#736E67] tracking-wide">
                   {tag}
                 </span>
               ))}
               {project.year && (
-                <span className="text-xs text-[#8A847D]">
+                <span className="text-xs text-[#736E67]">
                   {project.tags.length > 0 ? "· " : ""}
                   {project.year}
                 </span>
@@ -121,7 +121,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             {project.title}
           </h2>
           {project.tagline && (
-            <p className="text-sm text-[#8A847D] mt-1 leading-relaxed">{project.tagline}</p>
+            <p className="text-sm text-[#736E67] mt-1 leading-relaxed">{project.tagline}</p>
           )}
         </div>
       </Link>

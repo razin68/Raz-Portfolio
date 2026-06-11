@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { FadeInOnScroll } from "@/components/FadeIn"
 import { Hero } from "@/components/Hero"
 import { ProjectCard } from "@/components/ProjectCard"
-import { projects } from "@/lib/projects"
+import { orderedProjects } from "@/lib/projects"
 
 export const metadata: Metadata = {
   title: "Ahmed Razin: UX Designer",
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
-  const current = projects.filter((p) => p.era !== "earlier")
-  const earlier = projects.filter((p) => p.era === "earlier")
+  const current = orderedProjects.filter((p) => p.era !== "earlier")
+  const earlier = orderedProjects.filter((p) => p.era === "earlier")
 
   return (
     <main className="flex flex-col">
@@ -20,10 +20,10 @@ export default function HomePage() {
       <Hero />
 
       {/* Projects */}
-      <section id="projects" className="px-6 max-w-6xl mx-auto w-full pt-24 sm:pt-32 pb-32 scroll-mt-20">
+      <section id="projects" className="px-6 max-w-6xl mx-auto w-full pt-20 sm:pt-32 pb-24 sm:pb-32 scroll-mt-20">
         <FadeInOnScroll>
           <div className="max-w-2xl mb-20 sm:mb-28">
-            <p className="text-xs tracking-widest uppercase text-[#8A847D] mb-5">
+            <p className="text-xs tracking-widest uppercase text-[#736E67] mb-5">
               Selected Work
             </p>
             <h2
@@ -32,9 +32,9 @@ export default function HomePage() {
             >
               Case studies
             </h2>
-            <p className="text-lg text-[#8A847D] leading-relaxed">
-              My healthcare work across research, design systems, and content strategy, each
-              one a look at how I actually work through a problem.
+            <p className="text-lg text-[#736E67] leading-relaxed">
+              Three healthcare projects in research, design systems, and content strategy, each
+              one a look at how I work a problem end to end.
             </p>
           </div>
         </FadeInOnScroll>
@@ -48,8 +48,8 @@ export default function HomePage() {
         {earlier.length > 0 && (
           <>
             <FadeInOnScroll>
-              <div className="max-w-2xl mt-28 sm:mt-36 mb-16 sm:mb-20 border-t border-[#E5E0D8] pt-14">
-                <p className="text-xs tracking-widest uppercase text-[#8A847D] mb-5">
+              <div className="max-w-2xl mt-20 sm:mt-36 mb-14 sm:mb-20 border-t border-[#E5E0D8] pt-14">
+                <p className="text-xs tracking-widest uppercase text-[#736E67] mb-5">
                   Earlier Work
                 </p>
                 <h2
@@ -58,9 +58,9 @@ export default function HomePage() {
                 >
                   Where the instincts started
                 </h2>
-                <p className="text-lg text-[#8A847D] leading-relaxed">
-                  Startup and student work from 2018&ndash;2020, the early reps in research,
-                  product, and shipping.
+                <p className="text-lg text-[#736E67] leading-relaxed">
+                  Startup work from 2018&ndash;2020, the early reps in research and product,
+                  learned by shipping.
                 </p>
               </div>
             </FadeInOnScroll>

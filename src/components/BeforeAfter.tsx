@@ -1,4 +1,5 @@
 import { SectionVisual } from "@/components/SectionVisual"
+import { imgDims } from "@/lib/imageMeta"
 
 type ComparePanel = {
   image?: string
@@ -36,7 +37,7 @@ export function BeforeAfter({
             className={`inline-flex w-fit items-center text-xs tracking-widest uppercase rounded-full px-3 py-1 ${
               accent
                 ? "bg-[#C44B20] text-white"
-                : "border border-[#E5E0D8] text-[#8A847D]"
+                : "border border-[#E5E0D8] text-[#736E67]"
             }`}
           >
             {label}
@@ -49,6 +50,7 @@ export function BeforeAfter({
                 src={p.image}
                 alt={`${label}: ${p.caption}`}
                 loading="lazy"
+                {...imgDims(p.image)}
                 className="block w-full h-auto"
               />
             </figure>
@@ -60,7 +62,7 @@ export function BeforeAfter({
             </div>
           ) : null}
 
-          <p className="text-sm text-[#8A847D] leading-relaxed">{p.caption}</p>
+          <p className="text-sm text-[#736E67] leading-relaxed">{p.caption}</p>
         </div>
       ))}
     </div>

@@ -24,7 +24,7 @@ export function Hero() {
   const scrimOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0.4])
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-end overflow-hidden">
+    <section ref={ref} className="relative min-h-[100svh] flex items-end overflow-hidden">
       {/* Photo: zooms toward the figure (~38% / 30%) on scroll. Responsive
           srcset so large/retina screens get a crisp source. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -62,9 +62,9 @@ export function Hero() {
         </h1>
         <FadeIn delay={0.45}>
           <p className="text-lg text-white/80 max-w-xl leading-relaxed">
-            I&apos;m a UX designer and researcher with 5 years building research
-            infrastructure, clinical design systems, and evidence-based product strategy
-            that teams need to make good calls.
+            I&apos;m a UX designer and researcher. Five years building research
+            infrastructure, clinical design systems, and the evidence-based strategy teams
+            need to make good calls.
           </p>
         </FadeIn>
         <FadeIn delay={0.6} className="mt-10">

@@ -43,7 +43,7 @@ const experience: Role[] = [
             lead: "Designed and executed a 4-hypothesis A/B research study",
             text: " on provider search and discovery: 11 participants, 268 coded observations, Maze click-tracking, and session recording, producing outcome metrics that sped up development by raising confidence in decisions.",
             sub: [
-              "275% increase in provider profile satisfaction (net −2 → +15) by diagnosing a visual-hierarchy failure and solving it with a targeted header redesign.",
+              "Swung provider-profile sentiment from −2 to +15 (a 17-point gain) by diagnosing a visual-hierarchy failure and solving it with a targeted header redesign.",
               "+10.3% filter engagement and +5.9% downstream profile clicks by redesigning filter labels and groupings to match patient mental models, not internal clinical taxonomies.",
               "Caught a divergence between positive behavioral analytics and weak qualitative satisfaction, triangulating both in Looker Studio to prevent a false-positive product decision.",
             ],
@@ -176,7 +176,7 @@ export default function ResumePage() {
             </a>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-[#8A847D]">
+          <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-[#736E67]">
             <CopyEmail
               email="ahmedrazinux@gmail.com"
               className="cursor-pointer hover:text-[#1A1714] transition-colors"
@@ -237,13 +237,13 @@ export default function ResumePage() {
                       ) : (
                         role.org
                       )}
-                      <span className="text-[#8A847D]"> · {role.role}</span>
+                      <span className="text-[#736E67]"> · {role.role}</span>
                     </h2>
-                    <span className="text-sm text-[#8A847D] whitespace-nowrap">
+                    <span className="text-sm text-[#736E67] whitespace-nowrap">
                       {role.dates}
                     </span>
                   </div>
-                  <p className="mt-1 text-sm italic text-[#8A847D]">{role.meta}</p>
+                  <p className="mt-1 text-sm italic text-[#736E67]">{role.meta}</p>
 
                   <div className="mt-5 flex flex-col gap-6">
                     {role.groups.map((group, gi) => (
@@ -316,13 +316,13 @@ export default function ResumePage() {
               >
                 NYU Tandon School of Engineering
               </h2>
-              <span className="text-sm text-[#8A847D] whitespace-nowrap">
+              <span className="text-sm text-[#736E67] whitespace-nowrap">
                 Sep 2015 – May 2019
               </span>
             </div>
             <p className="mt-1 text-base text-[#1A1714]">
               B.S., Integrated Digital Media.{" "}
-              <span className="text-[#8A847D]">
+              <span className="text-[#736E67]">
                 Relevant coursework: User Experience Design, Intro to Web Development.
               </span>
             </p>

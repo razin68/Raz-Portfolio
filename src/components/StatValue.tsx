@@ -27,17 +27,14 @@ export function StatValue({ value, className }: { value: string; className?: str
   const parsed = parse(value)
   const ref = useRef<HTMLSpanElement>(null)
   const inView = useInView(ref, { once: true, margin: "-40px" })
-  const [display, setDisplay] = useState(() =>
-    parsed && !reduce ? format(parsed.prefix, 0, parsed.suffix, parsed.decimals) : value
-  )
+  // SSR, no-JS, and reduced motion always render the real final value, so static
+  // HTML never shows "0" or "<0 mo". The count-up animates from 0 to the final
+  // number only on the client, once the stat scrolls into view (the fade-in masks
+  // the reset).
+  const [display, setDisplay] = useState(value)
 
   useEffect(() => {
-    if (!parsed) return
-    if (reduce) {
-      setDisplay(value)
-      return
-    }
-    if (!inView) return
+    if (!parsed || reduce || !inView) return
     let raf = 0
     const start = performance.now()
     const dur = 1100
