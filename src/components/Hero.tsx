@@ -49,7 +49,7 @@ export function Hero() {
       >
         <FadeIn delay={0.1}>
           <p className="text-xs tracking-widest uppercase text-white/70 mb-6">
-            UX Designer · New York
+            New York
           </p>
         </FadeIn>
         <h1
@@ -62,9 +62,8 @@ export function Hero() {
         </h1>
         <FadeIn delay={0.45}>
           <p className="text-lg text-white/80 max-w-xl leading-relaxed">
-            I&apos;m a UX designer and researcher. Five years building research
-            infrastructure, clinical design systems, and the evidence-based strategy teams
-            need to make good calls.
+            I&apos;m a UX designer with 5 years building research
+            infrastructure, clinical design systems, and evidence-based product strategy.
           </p>
         </FadeIn>
         <FadeIn delay={0.6} className="mt-10">
@@ -73,7 +72,7 @@ export function Hero() {
       </motion.div>
 
       {/* Photo credit: it's his own street photography */}
-      <p className="absolute bottom-5 right-6 z-10 text-[10px] tracking-widest uppercase text-white/45">
+      <p className="absolute bottom-5 right-6 z-10 text-[10px] tracking-widest uppercase text-white/25">
         Shadow Seaport · New York, my photo
       </p>
     </section>

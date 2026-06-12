@@ -457,7 +457,8 @@ export const projects: Project[] = [
             label: "H1",
             title: "Specialties Label",
             verdict: "Shipped",
-            image: "/projects/ux-research-framework/specialties-label.jpg",
+            image: "/projects/ux-research-framework/specialties-label.png",
+            imageTransparent: true,
             stat: {
               value: "+17Δ",
               label: "sentiment swing across 6 interviews (−2 → +15)",
@@ -469,7 +470,8 @@ export const projects: Project[] = [
             label: "H2",
             title: "Filter Shift",
             verdict: "Shipped",
-            image: "/projects/ux-research-framework/filter-shift.jpg",
+            image: "/projects/ux-research-framework/filter-shift.png",
+            imageTransparent: true,
             stat: {
               value: "+10.3%",
               label: "filter engagement, across 6 interviews plus analytics",

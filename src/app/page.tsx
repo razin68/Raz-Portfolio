@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { FadeInOnScroll } from "@/components/FadeIn"
 import { Hero } from "@/components/Hero"
+import { AccomplishmentsMarquee } from "@/components/AccomplishmentsMarquee"
 import { ProjectCard } from "@/components/ProjectCard"
 import { orderedProjects } from "@/lib/projects"
 
@@ -19,6 +20,9 @@ export default function HomePage() {
       {/* Hero: full-bleed street photograph that zooms toward the figure on scroll */}
       <Hero />
 
+      {/* Scroll-velocity marquee of standout accomplishments */}
+      <AccomplishmentsMarquee />
+
       {/* Projects */}
       <section id="projects" className="px-6 max-w-6xl mx-auto w-full pt-20 sm:pt-32 pb-24 sm:pb-32 scroll-mt-20">
         <FadeInOnScroll>
@@ -33,8 +37,8 @@ export default function HomePage() {
               Case studies
             </h2>
             <p className="text-lg text-[#736E67] leading-relaxed">
-              Three healthcare projects in research, design systems, and content strategy, each
-              one a look at how I work a problem end to end.
+              Three projects with URMC in research, design systems, and content strategy. Each
+              one takes a look at how I solve problems.
             </p>
           </div>
         </FadeInOnScroll>
@@ -59,8 +63,7 @@ export default function HomePage() {
                   Where the instincts started
                 </h2>
                 <p className="text-lg text-[#736E67] leading-relaxed">
-                  Startup work from 2018&ndash;2020, the early reps in research and product,
-                  learned by shipping.
+                  Startup work from 2018&ndash;2020, the early reps in research and product.
                 </p>
               </div>
             </FadeInOnScroll>
