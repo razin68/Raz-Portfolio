@@ -188,6 +188,17 @@ Employer is named (University of Rochester Medical Center / URMC), so UR Medicin
 - Recompressed heaviest JPGs (~2 MB saved).
 - Full copy rewrite for sentence-structure variation (rules in §6), facts untouched.
 
+### Later in the session
+- Homepage: removed the "Selected Work"/"Earlier Work" eyebrow kickers; renamed the headings to **Selected work** and **Earlier work**; scroll cue is one centered horizontal row (text + arrow).
+- Case-study **titles** are now descriptive (what + how/result, e.g. "A design system people trust, fully adopted"); card **taglines** rewritten to add non-repetitive supporting context.
+- **Section headings rewritten so the headings alone tell each case study's story** — specific, non-generic, in order. If you edit a heading, keep that read-the-headings-only narrative intact.
+- Case-study **load order**: the title reveals first, then the cover image (`FadeIn` delays in `work/[slug]/page.tsx`).
+- **Eyebrow cleanup**: removed the "Project Overview" kicker and the per-section "Goal" kicker (goal text now reads as a plain subtitle). Kept the functional overview field labels (Outcomes, The Problem, My Role, etc.) on purpose — removing them would leave unlabeled walls of text.
+- **Fun/engaging micro-interactions** (all reduced-motion safe): a warm-gold cursor spotlight on the hero (`Hero.tsx`, 240px radius, `rgba(235,195,110,0.30)`), a springy copy-email confirmation (`CopyEmail.tsx`), springy terracotta nav underlines (`Nav.tsx`), a rotating "Currently…" line in the footer (`RotatingLine.tsx`), a terracotta hover sweep on project cards (`ProjectCard.tsx`), and snappier expo-out scroll reveals (`FadeIn.tsx`).
+- Hero positioning statement was experimented with, then **reverted to the original** ("…5 years building research infrastructure, clinical design systems, and evidence-based product strategy.").
+- Fixed the H1/H2 hypothesis screenshots to transparent PNGs (`filter-shift.png`, `specialties-label.png`); re-optimized the oversized library board (16540px / 14 MB → 3000px / 474 KB).
+- `AccomplishmentsMarquee.tsx` (a scroll marquee) was built, then removed from the homepage per request. The file still exists, unused — **safe to delete**.
+
 ---
 
 ## 9. Open / pending work

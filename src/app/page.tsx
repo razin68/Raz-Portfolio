@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { FadeInOnScroll } from "@/components/FadeIn"
 import { Hero } from "@/components/Hero"
-import { AccomplishmentsMarquee } from "@/components/AccomplishmentsMarquee"
 import { ProjectCard } from "@/components/ProjectCard"
 import { orderedProjects } from "@/lib/projects"
 
@@ -20,21 +19,15 @@ export default function HomePage() {
       {/* Hero: full-bleed street photograph that zooms toward the figure on scroll */}
       <Hero />
 
-      {/* Scroll-velocity marquee of standout accomplishments */}
-      <AccomplishmentsMarquee />
-
       {/* Projects */}
       <section id="projects" className="px-6 max-w-6xl mx-auto w-full pt-20 sm:pt-32 pb-24 sm:pb-32 scroll-mt-20">
         <FadeInOnScroll>
           <div className="max-w-2xl mb-20 sm:mb-28">
-            <p className="text-xs tracking-widest uppercase text-[#736E67] mb-5">
-              Selected Work
-            </p>
             <h2
               className="text-4xl md:text-5xl text-[#1A1714] leading-[1.1] mb-5"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              Case studies
+              Selected work
             </h2>
             <p className="text-lg text-[#736E67] leading-relaxed">
               Three projects with URMC in research, design systems, and content strategy. Each
@@ -53,14 +46,11 @@ export default function HomePage() {
           <>
             <FadeInOnScroll>
               <div className="max-w-2xl mt-20 sm:mt-36 mb-14 sm:mb-20 border-t border-[#E5E0D8] pt-14">
-                <p className="text-xs tracking-widest uppercase text-[#736E67] mb-5">
-                  Earlier Work
-                </p>
                 <h2
                   className="text-3xl md:text-4xl text-[#1A1714] leading-[1.1] mb-5"
                   style={{ fontFamily: "var(--font-serif)" }}
                 >
-                  Where the instincts started
+                  Earlier work
                 </h2>
                 <p className="text-lg text-[#736E67] leading-relaxed">
                   Startup work from 2018&ndash;2020, the early reps in research and product.

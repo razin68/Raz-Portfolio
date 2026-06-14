@@ -51,7 +51,7 @@ export default async function CaseStudyPage({ params }: Props) {
     <main className="min-h-screen overflow-x-clip">
       {/* Hero */}
       <section className="pt-28 sm:pt-32 pb-12 sm:pb-16 px-6 max-w-4xl mx-auto">
-        <FadeIn delay={0.1}>
+        <FadeIn delay={0.45}>
           <Magnetic className="mb-10">
             <Link
               href="/"
@@ -62,7 +62,7 @@ export default async function CaseStudyPage({ params }: Props) {
           </Magnetic>
         </FadeIn>
 
-        <FadeIn delay={0.2}>
+        <FadeIn delay={0.55}>
           <div className="flex flex-wrap gap-2 mb-6">
             {project.era === "earlier" && (
               <span className="text-xs text-[#736E67] border border-[#E5E0D8] bg-[#EDE7DD] rounded-full px-3 py-1">
@@ -90,12 +90,12 @@ export default async function CaseStudyPage({ params }: Props) {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.3}>
+        <FadeIn delay={0.1}>
           <h1
             className="text-[clamp(2.5rem,6vw,5rem)] leading-[1.1] text-[#1A1714] mb-6"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            <RevealText onMount delay={0.35}>
+            <RevealText onMount delay={0.15}>
               {project.title}
             </RevealText>
           </h1>
@@ -106,7 +106,7 @@ export default async function CaseStudyPage({ params }: Props) {
       </section>
 
       {/* Cover */}
-      <FadeIn delay={0.4}>
+      <FadeIn delay={0.65}>
         {project.cover ? (
           <div className="max-w-4xl mx-auto px-6 mb-12 sm:mb-20">
             <figure
@@ -139,9 +139,6 @@ export default async function CaseStudyPage({ params }: Props) {
       {/* Project overview */}
       <section className="px-6 max-w-4xl mx-auto mb-16 sm:mb-24">
         <FadeInOnScroll>
-          <p className="text-xs tracking-widest uppercase text-[#736E67] mb-10">
-            Project Overview
-          </p>
           {/* Outcomes lead */}
           {project.outcomes && project.outcomes.length > 0 && (
             <div className="mb-14">
@@ -270,7 +267,6 @@ export default async function CaseStudyPage({ params }: Props) {
                   </h3>
                   {section.goal && (
                     <p className="text-sm text-[#736E67] mt-3 leading-relaxed">
-                      <span className="block text-xs tracking-widest uppercase mb-1">Goal</span>
                       {section.goal}
                     </p>
                   )}

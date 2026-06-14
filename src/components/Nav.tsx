@@ -63,13 +63,13 @@ export function Nav() {
                 }`}
               >
                 {label}
-                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-[#C44B20] transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-[#C44B20] transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-x-100" />
               </a>
             ) : (
               <Link
                 key={href}
                 href={href}
-                className={`relative text-sm transition-colors ${
+                className={`group relative text-sm transition-colors ${
                   pathname === href
                     ? onDark
                       ? "text-white"
@@ -80,12 +80,14 @@ export function Nav() {
                 }`}
               >
                 {label}
-                {pathname === href && (
+                {pathname === href ? (
                   <motion.span
                     layoutId="nav-underline"
                     className={`absolute -bottom-1 left-0 h-px w-full ${onDark ? "bg-white" : "bg-[#1A1714]"}`}
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
+                ) : (
+                  <span className="absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-[#C44B20] transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:scale-x-100" />
                 )}
               </Link>
             )

@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef } from "react"
-import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion"
+import { motion, useScroll, useTransform, useReducedMotion, useMotionValue, useMotionTemplate } from "framer-motion"
 import { FadeIn } from "@/components/FadeIn"
 import { RevealText } from "@/components/RevealText"
 import { ScrollCue } from "@/components/ScrollCue"
@@ -23,8 +23,27 @@ export function Hero() {
   const contentY = useTransform(scrollYProgress, [0, 0.5], [0, -30])
   const scrimOpacity = useTransform(scrollYProgress, [0, 0.65], [1, 0.4])
 
+  // Warm spotlight that follows the cursor across the dark hero.
+  const glowX = useMotionValue(-1000)
+  const glowY = useMotionValue(-1000)
+  const glow = useMotionTemplate`radial-gradient(240px circle at ${glowX}px ${glowY}px, rgba(235,195,110,0.30), transparent 68%)`
+  function handleGlow(e: React.MouseEvent<HTMLElement>) {
+    const r = e.currentTarget.getBoundingClientRect()
+    glowX.set(e.clientX - r.left)
+    glowY.set(e.clientY - r.top)
+  }
+  function clearGlow() {
+    glowX.set(-1000)
+    glowY.set(-1000)
+  }
+
   return (
-    <section ref={ref} className="relative min-h-[100svh] flex items-end overflow-hidden">
+    <section
+      ref={ref}
+      onMouseMove={reduce ? undefined : handleGlow}
+      onMouseLeave={reduce ? undefined : clearGlow}
+      className="relative min-h-[100svh] flex items-end overflow-hidden"
+    >
       {/* Photo: zooms toward the figure (~38% / 30%) on scroll. Responsive
           srcset so large/retina screens get a crisp source. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -42,6 +61,13 @@ export function Hero() {
         style={reduce ? undefined : { opacity: scrimOpacity }}
         className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/30"
       />
+      {!reduce && (
+        <motion.div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 z-[1]"
+          style={{ background: glow }}
+        />
+      )}
 
       <motion.div
         style={reduce ? undefined : { opacity: contentOpacity, y: contentY }}

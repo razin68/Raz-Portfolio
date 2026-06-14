@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import { motion, useReducedMotion } from "framer-motion"
 
-// Click to copy the email, with a brief "Copied" confirmation.
+// Click to copy the email, with a springy "Copied" confirmation in the accent color.
 export function CopyEmail({
   email,
   label,
@@ -13,6 +14,7 @@ export function CopyEmail({
   className?: string
 }) {
   const [copied, setCopied] = useState(false)
+  const reduce = useReducedMotion()
 
   async function copy(e: React.MouseEvent) {
     e.preventDefault()
@@ -32,7 +34,15 @@ export function CopyEmail({
       className={className}
       aria-label={`Copy email address ${email}`}
     >
-      {copied ? "Copied ✓" : label ?? email}
+      <motion.span
+        key={copied ? "copied" : "idle"}
+        initial={reduce ? false : { scale: 0.92, opacity: 0.6 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 520, damping: 15 }}
+        className={copied ? "inline-block text-[#C44B20]" : "inline-block"}
+      >
+        {copied ? "Copied ✓" : label ?? email}
+      </motion.span>
     </a>
   )
 }

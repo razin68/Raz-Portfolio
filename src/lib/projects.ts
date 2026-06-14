@@ -137,9 +137,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "student-voice-system",
-    title: "Elevating the Student Voice",
+    title: "Elevating student voice with a write-once content system",
     tagline:
-      "Surfacing authentic student stories at key enrollment moments across 250+ graduate programs.",
+      "Real student stories, surfaced where enrollment decisions happen.",
     tags: ["Research Synthesis", "Component Design", "Content Strategy"],
     gradient: "from-orange-100 to-rose-200",
     cover: "/projects/student-voice-system/cover.jpg",
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     status: "Research & system design",
     sections: [
       {
-        title: "The Research",
+        title: "Students were leaving the site to find real voices",
         goal: "Understand what students actually needed from the site",
         mediaRow: [
           "/projects/student-voice-system/research-flow.png",
@@ -198,7 +198,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "A disconnected story",
+        title: "Their stories existed, just scattered and buried",
         visual: "audit",
         body:
           "The deeper problem is tone. The site reads like an institution talking at you, official and polished and a little corporate. A prospective student trying to picture daily life here has to dig for it. The pieces of a real story do exist, scattered and buried across a sea of official pages, from financial aid and admissions to curriculum, location, and faculty access. Anything human, a student's perspective or sense of growth, takes real effort to surface.\n\nThe result is distance. You can learn the requirements and the tuition long before you hear a word about what being there actually feels like.",
@@ -207,7 +207,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "The Student Voice System",
+        title: "One student entry, reused wherever it's needed",
         goal: "A widget toolkit that puts student stories where decisions happen",
         body:
           "Students were leaving the site to find real voices, so I brought the voices back to them, woven into the program pages, the PhD directory, and the homepage, right where someone weighs whether this place is for them.\n\nThe mechanism is a single content entry. An editor writes one student's story once, and the CMS relates it to whatever format the page calls for. A tight layout takes a quote. A page with room runs the full feature. A cohort composes several students into one tabbed block.\n\nWrite it once, reuse it anywhere: that is what lets the pattern scale across 250+ programs without an editor rewriting a word, and why a human voice can finally reach the pages that decide enrollment.\n\nThis mattered most to the people who would run it. The content team was small, split across the clinical and education sites, and clinical work, urgent and patient-facing, swallowed most of every week. Education copy lived on whatever time was left. Write-once was built for exactly that squeeze, one entry reused across 250+ program pages, the directory, and the homepage, with no page-by-page rewriting. On a rough projection, the model was designed to claw back 60 to 80 editorial hours a content cycle, time the team never had to spare.",
@@ -239,7 +239,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Replacing dense admissions copy",
+        title: "Turning walls of essay text into a scannable feed",
         goal: "Turn long-form copy into a scannable student directory",
         body:
           "Those widgets needed a home, and the Student Perspectives page was the obvious place to start. It listed a handful of students as walls of essay text, three or four screens per person, with one small photo and nothing to anchor a quick scan. You had to commit to reading before you even knew whose story it was.\n\nThe redesign turns that page into a feed. Each student gets a card with a photo, name and program, a short preview, and a link into the full story. One Perspectives Feed widget powers all of it, so adding a student takes a single content entry rather than a hand-built page.",
@@ -263,7 +263,7 @@ export const projects: Project[] = [
         },
       },
       {
-        title: "Making program discovery human",
+        title: "Rebuilding the PhD directory around discovery",
         goal: "Reorient the PhD directory around student experience",
         body:
           "One level up, the PhD directory had the same problem. It opened on a dense \"Why Choose Rochester?\" block and a long program list, then buried award recipients in paragraphs at the bottom. You had to wade through the institution before reaching a single program, let alone a person.\n\nThe redesign rebuilds the page around discovery. A short intro and a \"Why Choose Us?\" video set the tone, every program turns into a scannable card, and a Student Spotlight lands in the main navigation, making student voice a first-class destination instead of a footnote. It is the same content the directory always held, reorganized so people can find their way in.",
@@ -287,7 +287,7 @@ export const projects: Project[] = [
         },
       },
       {
-        title: "Leading the front door with students",
+        title: "Putting a student on the highest-traffic page",
         goal: "Put student voice on the highest-traffic landing page",
         body:
           "With the deeper pages fixed, one move was left: the front door. Most prospective students land first on the School of Medicine homepage, which opened on a centennial banner and a dean's portrait, institution before people.\n\nThe redesign keeps the credibility markers and makes room for the students. \"Inside the Trainee Experience\" features a real graduate, a quote widget carries her voice, and the research-funding and faculty numbers still anchor the page. Here the toolkit reaches full stretch, the same student entries written for the program pages now surfacing on the page that sees the most eyes, with no extra authoring.",
@@ -333,9 +333,9 @@ export const projects: Project[] = [
   },
   {
     slug: "ux-research-framework",
-    title: "Improving Provider Experience",
+    title: "Improving provider experience with a scoring framework",
     tagline:
-      "Redesigning provider search and profiles, with a weighted-scoring research framework deciding which changes shipped, and which to kill.",
+      "Replacing 'I don't like the blue' with a number the team could trust.",
     tags: ["Provider Search", "Interaction Design", "Weighted Scoring"],
     gradient: "from-amber-100 to-orange-200",
     cover: "/projects/ux-research-framework/cover.jpg",
@@ -359,7 +359,7 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        title: "The Starting Point",
+        title: "Design decisions ran on opinion",
         goal: "Make research produce answers leadership would act on",
         body:
           "When I joined the web team at the University of Rochester Medical Center, design decisions ran on opinion. Research happened; it just never became proof a roadmap would move for. Everyone agreed it mattered. Turning a hypothesis into enough evidence to change direction was the part nobody had cracked.\n\nThree problems stood in the way.",
@@ -390,7 +390,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Applying the Framework to Provider Search",
+        title: "A scoring framework: Sentiment × Severity",
         goal: "Validate or reject product assumptions with structured research",
         statsTop: true,
         body:
@@ -448,7 +448,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Three Hypotheses, Three Verdicts",
+        title: "Three fixes tested: two shipped, one didn't",
         goal: "Ship what the evidence supports, kill what it doesn't",
         body:
           "With the framework running, I ran three design hypotheses against a documented baseline, six moderated interviews each. Each one returned a numeric Efficacy Delta that went straight to the roadmap. Two said build. One said kill, before a sprint was spent.",
@@ -495,7 +495,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Killing a Feature the Team Wanted",
+        title: "Killing a feature the team wanted, on a −21 score",
         goal: "Use the evidence to overturn a popular idea before it cost a sprint",
         statsTop: true,
         stats: [
@@ -506,7 +506,7 @@ export const projects: Project[] = [
           "This is the one worth slowing down on, because killing it took more than a number. Connected Profiles had a champion in our web team lead, and on paper the logic was sound: research credentials signal trust. The score said otherwise. At −21 across six sessions, it left patients worse off than no card at all.\n\nSo I brought the rollup to a design review and walked the room through the scored sessions, observation by observation. The lead read the same evidence I did and agreed to cut it, and a sprint of front-end work went to something patients needed instead. The framework had done the hard part already. By turning a hunch into a number the room could line up behind, it let me overrule a popular idea without the conversation ever turning personal.",
       },
       {
-        title: "Operational Impact",
+        title: "Old research became data I could query again",
         goal: "Make prior research reusable instead of disposable",
         body:
           "The framework's real payoff arrived after the provider study. Every session lives scored in one relational base, which means old research stops being a finished report and turns back into data I can query. I went looking through interviews from earlier projects, the same recordings seen through a sharper lens, and pulled defensible new findings out of work everyone had already filed away.",
@@ -530,7 +530,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Key Learnings",
+        title: "Evidence beats opinion, at any scale",
         body:
           "Whether the product is a platform for construction businesses or a healthcare system at institutional scale, the problem repeats: decisions get made on opinion until someone builds the infrastructure to make them on evidence.",
         learnings: [
@@ -563,9 +563,9 @@ export const projects: Project[] = [
   },
   {
     slug: "healthcare-design-library",
-    title: "A Design System People Trust",
+    title: "A design system people trust, fully adopted",
     tagline:
-      "70 components, adopted by design and engineering, delivered end-to-end in under 3 months.",
+      "Rebuilt from the tokens up in under three months, after every prior attempt had failed.",
     tags: ["Design Tokens", "Engineering Partnership", "Documentation"],
     timeline: "Under 3 months, end-to-end",
     gradient: "from-stone-200 to-amber-200",
@@ -593,7 +593,7 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        title: "Diagnosing the Problem",
+        title: "The system had quietly drifted out of trust",
         goal: "Find why the system stopped being the source of truth",
         wideImage: "/projects/healthcare-design-library/old-library-board.jpg",
         wideImageCaption:
@@ -607,7 +607,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Why It Mattered",
+        title: "When design and engineering drift, patients pay",
         goal: "Tie the drift to real patient cost",
         cardsHorizontal: true,
         body:
@@ -628,7 +628,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "The Approach",
+        title: "A new foundation, built with engineering in the room",
         goal: "Rebuild the design system on a foundation people could trust",
         body:
           "Three steps, two of them mine and one I drove with engineering. The first was executive buy-in, and I made that case in the terms leadership weighs: money and time. Every week, teams burned hours reconciling work built from different sources of truth, with a standing two-hour sync running every other week just to catch the drift. Framed as efficiency and cost, the rebuild got its green light.",
@@ -657,7 +657,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Moving the Team Forward",
+        title: "Documentation made the team trust it again",
         goal: "Make the documentation do the convincing",
         wideImage: "/projects/healthcare-design-library/documentation-breakdown.png",
         wideImageTransparent: true,
@@ -667,7 +667,7 @@ export const projects: Project[] = [
           "Most design systems document the big components and stop there. This one documents every widget the same way, down to the small pieces that used to drift, so developers and content editors can move without pulling each other off real work.\n\nEach widget answers the same six questions. That consistency turned the library from a liability into a tool the team reached for on its own, and it shifted reviews from \"I don't like the blue\" to \"does this serve what the patient needs?\"\n\nThe payoff showed up in the review queue. Once developers and content editors had what they needed up front, their comments on the design docs dropped 40 to 50 percent, a number I got by counting the threads on the Figma files before and after, alongside the meeting hours we won back. The questions that remained were sharper, builds moved faster, and my best estimate is that a typical component went from spec to merged in about a third less calendar time.",
       },
       {
-        title: "Scaling Across Platforms",
+        title: "The same system, extended to the medical school",
         goal: "Extend the system without fragmenting the brand",
         visual: "platforms",
         body:
@@ -695,9 +695,9 @@ export const projects: Project[] = [
   },
   {
     slug: "meal-tab",
-    title: "Meal Tab",
+    title: "Meal Tab: finding new recipes in the aisle",
     tagline:
-      "Helping grocery shoppers discover new recipes and find the ingredients, right in the aisle.",
+      "When the in-store test fell apart, I salvaged the data with a remote study.",
     tags: ["Mobile App", "UX Research", "Startup"],
     era: "earlier",
     timeline: "6 weeks · 2020",
@@ -725,14 +725,14 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        title: "The Background",
+        title: "Most shoppers don't know what they're cooking",
         goal: "Understand why finding new meals in a store is hard",
         mediaFull: ["/projects/meal-tab/confused-shopper.png"],
         body:
           "As many as 85% of shoppers don't know what they're cooking that night, and it's rarely something new. Most save a recipe at home, then hunt down the ingredients later. Supermarkets are big and confusingly laid out, though, so anything unfamiliar becomes a chore.\n\nThere had to be an easier way to find new meals and make the trip itself worth something.",
       },
       {
-        title: "Talking to Shoppers",
+        title: "100 interviews in the aisles",
         goal: "Learn how people really shop for meals",
         stats: [{ value: "100", label: "shopper interviews" }],
         body:
@@ -744,7 +744,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "Two Kinds of Cooks",
+        title: "Two kinds of cooks, one shared wish",
         goal: "Turn the research into people we could design for",
         mediaFull: [
           "/projects/meal-tab/persona-explorer.jpg",
@@ -754,7 +754,7 @@ export const projects: Project[] = [
           "Two types emerged: the Explorer, after new ideas, and the Beginner, after something doable. Different experience levels, one shared wish, to save time and land a good meal without the hassle.",
       },
       {
-        title: "Rethinking the Recipe Browse",
+        title: "Rebuilding the browse around shoppers' time",
         goal: "Make a growing recipe collection easy to navigate",
         images: [
           "/projects/meal-tab/information-architecture.png",
@@ -764,7 +764,7 @@ export const projects: Project[] = [
           "A single recipe category ran the original screen, and it buckled as the collection grew, the cards too thin to tell anything apart. People filter recipes a dozen ways, and the same person filters differently day to day, so I flattened the sub-categories into one hierarchy and led with recipes under 30 minutes to respect shoppers' time.",
       },
       {
-        title: "When In-Store Testing Failed",
+        title: "The in-store test broke, so I changed the question",
         goal: "Salvage real signal from a broken test",
         images: ["/projects/meal-tab/welcome-redesign.jpg"],
         stats: [
@@ -775,7 +775,7 @@ export const projects: Project[] = [
           "Three weeks in, we finally tested in a store, and it fell apart: a buggy build, and shoppers we tried to stop mid-shop who had no patience for it. Rather than force it, I pulled the team back to the goal that mattered, metrics that would convince store owners, and narrowed the ask to one thing, whether shoppers would even try this on sight.\n\nWe rebuilt the welcome screen to earn that first glance, then tested it remotely with 50 users in Maze, the tablet mocked up as if clamped to a cart. People dove straight in from the welcome screen, so I made the old \"how it works\" overview optional and cut the friction.",
       },
       {
-        title: "Into a Real Store",
+        title: "The numbers opened a door at Gristedes",
         goal: "Use the data to open a door",
         images: ["/projects/meal-tab/gristedes.jpg"],
         body:
@@ -804,9 +804,9 @@ export const projects: Project[] = [
   },
   {
     slug: "indoor-buddy",
-    title: "Indoor Buddy Website",
+    title: "Indoor Buddy: a site rebuilt to win demos",
     tagline:
-      "Rebuilding our startup's site to sell Meal Tab to store owners and lift demo conversions.",
+      "Built it myself in six weeks; demo requests rose 24% and grocers came calling.",
     tags: ["Web Design", "Conversion", "Front-End"],
     era: "earlier",
     timeline: "6 weeks · 2020",
@@ -832,7 +832,7 @@ export const projects: Project[] = [
     ],
     sections: [
       {
-        title: "The Goals",
+        title: "Store owners needed a reason to say yes",
         goal: "Decide what the site actually needed to do",
         body:
           "Improving the product meant getting store owners to let us demo it on their floors. To learn what those owners actually worry about, I sat down with Brandon, a manager at Brooklyn Fare. Three needs came out of that conversation.",
@@ -843,14 +843,14 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "UX Audit",
+        title: "Auditing where the old site lost owners",
         goal: "Judge the current site against those goals",
         images: ["/projects/indoor-buddy/ux-audit.png"],
         body:
           "I audited the existing site against those goals and basic UX practice, flagging each spot where it lost a store owner's attention or failed to make the case.",
       },
       {
-        title: "Proof It Would Work",
+        title: "Leading with proof of demand",
         goal: "Give owners evidence, not just claims",
         stats: [
           { value: "79%", label: "would be likely to explore the interface in a store" },
@@ -860,7 +860,7 @@ export const projects: Project[] = [
           "An owner weighing an investment wants proof of demand. We had tested Meal Tab with plenty of users online, so the strongest numbers went straight onto the site. Brandon had said that seeing a shopper use it would land harder than any claim, so I produced a short demo video that frames the problem and shows the fix.",
       },
       {
-        title: "Information Hierarchy",
+        title: "Structuring the page around owners' concerns",
         goal: "Lead with what store owners care about",
         images: ["/projects/indoor-buddy/information-hierarchy.png"],
         body:
@@ -872,7 +872,7 @@ export const projects: Project[] = [
         ],
       },
       {
-        title: "From Wireframe to a Built Site",
+        title: "From wireframe to a responsive build",
         goal: "Ship a responsive site in six weeks",
         mediaRow: [
           "/projects/indoor-buddy/wireframe.png",

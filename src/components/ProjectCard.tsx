@@ -88,6 +88,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </>
           )}
 
+          {/* Warm terracotta sweep on hover */}
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#C44B20]/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
           {/* Hover CTA */}
           <div
             className="absolute inset-0 flex items-end p-5"

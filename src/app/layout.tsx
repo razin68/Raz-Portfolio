@@ -4,6 +4,7 @@ import { DM_Serif_Display } from "next/font/google"
 import { Nav } from "@/components/Nav"
 import { BackToTop } from "@/components/BackToTop"
 import { CopyEmail } from "@/components/CopyEmail"
+import { RotatingLine } from "@/components/RotatingLine"
 import "./globals.css"
 
 const inter = Inter({
@@ -103,10 +104,16 @@ export default function RootLayout({
         <Nav />
         <div id="main-content" className="flex-1 flex flex-col">{children}</div>
         <footer className="border-t border-[#E5E0D8] px-6 py-8">
-          <div className="max-w-6xl mx-auto flex justify-between items-center text-sm text-[#736E67]">
-            <span style={{ fontFamily: "var(--font-serif)" }} className="text-[#1A1714]">
-              Ahmed Razin
-            </span>
+          <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-y-3 text-sm text-[#736E67]">
+            <div className="flex items-center gap-3">
+              <span style={{ fontFamily: "var(--font-serif)" }} className="text-[#1A1714]">
+                Ahmed Razin
+              </span>
+              <span aria-hidden className="hidden sm:inline text-[#E5E0D8]">·</span>
+              <span className="hidden sm:inline-flex">
+                <RotatingLine />
+              </span>
+            </div>
             <div className="flex gap-6">
               <CopyEmail
                 email="ahmedrazinux@gmail.com"

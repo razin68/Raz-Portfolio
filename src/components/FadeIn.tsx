@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 
 type FadeInProps = {
   children: React.ReactNode
@@ -9,27 +9,38 @@ type FadeInProps = {
   direction?: "up" | "none"
 }
 
+// Expo-out easing gives the reveals a bit more snap and character.
+const EASE = [0.16, 1, 0.3, 1] as const
+
 export function FadeIn({ children, delay = 0, className, direction = "up" }: FadeInProps) {
+  const reduce = useReducedMotion()
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: direction === "up" ? 20 : 0 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      initial={reduce ? false : { opacity: 0, y: direction === "up" ? 22 : 0 }}
+      animate={reduce ? undefined : { opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay, ease: EASE }}
     >
       {children}
     </motion.div>
   )
 }
 
-export function FadeInOnScroll({ children, className }: { children: React.ReactNode; className?: string }) {
+export function FadeInOnScroll({
+  children,
+  className,
+}: {
+  children: React.ReactNode
+  className?: string
+}) {
+  const reduce = useReducedMotion()
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={reduce ? false : { opacity: 0, y: 28 }}
+      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.7, ease: EASE }}
     >
       {children}
     </motion.div>
