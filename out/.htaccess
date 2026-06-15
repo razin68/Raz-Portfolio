@@ -1,0 +1,27 @@
+# ----------------------------------------------------------------------
+# Compression — shrink text assets ~70% over the wire
+# ----------------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/javascript application/json image/svg+xml application/x-font-ttf application/font-woff2
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript application/json image/svg+xml application/x-font-ttf application/font-woff2
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Caching — hashed build assets are immutable; HTML must revalidate
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Next.js fingerprinted assets never change for a given URL
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  # Fonts and images: cache a month
+  <FilesMatch "\.(woff2?|ttf|otf|eot|jpg|jpeg|png|gif|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  # HTML: always revalidate so content updates show immediately
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>

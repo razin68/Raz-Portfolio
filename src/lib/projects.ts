@@ -171,7 +171,7 @@ export const projects: Project[] = [
           "/projects/student-voice-system/research-google.png",
         ],
         mediaRowEqualHeight: true,
-        mediaFull: ["/projects/student-voice-system/research-persona.jpg"],
+        mediaFull: ["/projects/student-voice-system/research-persona.png"],
         body:
           "The website wasn't answering the questions students actually carried. Choosing a graduate program means betting on your own future, and you can't make that bet until you picture yourself inside it. So they looked elsewhere, putting questions to Reddit and Google: \"is the program actually good for research?\", \"what's grad student life really like?\", \"are the PhD students happy?\"\n\nProgram facts only reach so far. What a prospective student wants is someone who has already lived it.\n\nThat search maps onto a long, high-stakes journey, from early coursework and entrance-exam prep through shadowing hours, research, and applications. At every step the official site answered in institutional copy, while the reassurance students were after sat on third-party forums.",
         bullets: [

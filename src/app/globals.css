@@ -124,6 +124,34 @@ button:focus-visible,
   50% { transform: translate3d(-4vw, 4vw, 0); }
 }
 
+/* Case-study hero entrance. Pure CSS so the title, tags, and cover ease in
+   at first paint, independent of JS hydration — no post-hydration "skip". */
+@keyframes cs-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+.cs-enter {
+  opacity: 0;
+  animation: cs-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Clip-mask headline reveal (pure CSS, so no hydration skip): the line
+   slides up from behind a hidden edge. */
+@keyframes cs-clip-rise {
+  from { transform: translateY(110%); }
+  to   { transform: translateY(0); }
+}
+.cs-clip {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+.cs-clip > span {
+  display: block;
+  animation: cs-clip-rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /* Bouncing scroll cue */
 @keyframes nudge {
   0%, 100% { transform: translateY(0); opacity: 0.7; }
@@ -141,5 +169,13 @@ button:focus-visible,
   .aurora span,
   .animate-nudge {
     animation: none !important;
+  }
+  .cs-enter {
+    animation: none !important;
+    opacity: 1;
+  }
+  .cs-clip > span {
+    animation: none !important;
+    transform: none;
   }
 }

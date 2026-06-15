@@ -2,9 +2,8 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { projects, orderedProjects, getProject } from "@/lib/projects"
-import { FadeIn, FadeInOnScroll, QuoteReveal } from "@/components/FadeIn"
+import { FadeInOnScroll, QuoteReveal } from "@/components/FadeIn"
 import { ScrollProgress } from "@/components/ScrollProgress"
-import { RevealText } from "@/components/RevealText"
 import { ProjectThumb } from "@/components/ProjectThumb"
 import { SectionVisual } from "@/components/SectionVisual"
 import { AuditMap } from "@/components/AuditMap"
@@ -53,8 +52,8 @@ export default async function CaseStudyPage({ params }: Props) {
       <ScrollProgress />
       {/* Hero */}
       <section className="pt-28 sm:pt-32 pb-12 sm:pb-16 px-6 max-w-4xl mx-auto">
-        <FadeIn delay={0.45}>
-          <Magnetic className="mb-10">
+        <div className="cs-enter mb-10" style={{ animationDelay: "0.05s" }}>
+          <Magnetic>
             <Link
               href="/"
               className="inline-flex items-center gap-2 text-sm text-[#736E67] hover:text-[#1A1714] transition-colors"
@@ -62,10 +61,10 @@ export default async function CaseStudyPage({ params }: Props) {
               ← All work
             </Link>
           </Magnetic>
-        </FadeIn>
+        </div>
 
-        <FadeIn delay={0.55}>
-          <div className="flex flex-wrap gap-2 mb-6">
+        <div className="cs-enter mb-6" style={{ animationDelay: "0.12s" }}>
+          <div className="flex flex-wrap gap-2">
             {project.era === "earlier" && (
               <span className="text-xs text-[#736E67] border border-[#E5E0D8] bg-[#EDE7DD] rounded-full px-3 py-1">
                 Earlier work{project.timeline ? ` · ${project.timeline}` : ""}
@@ -90,25 +89,24 @@ export default async function CaseStudyPage({ params }: Props) {
               </span>
             )}
           </div>
-        </FadeIn>
+        </div>
 
-        <FadeIn delay={0.1}>
-          <h1
-            className="text-[clamp(1.9rem,3.4vw,2.75rem)] leading-[1.15] text-[#1A1714] mb-6"
-            style={{ fontFamily: "var(--font-serif)" }}
-          >
-            <RevealText onMount delay={0.15}>
-              {project.title}
-            </RevealText>
-          </h1>
-          <p className="text-xl text-[#736E67] leading-relaxed max-w-2xl">
-            {project.tagline}
-          </p>
-        </FadeIn>
+        <h1
+          className="cs-enter text-[clamp(1.9rem,3.4vw,2.75rem)] leading-[1.15] text-[#1A1714] mb-6"
+          style={{ fontFamily: "var(--font-serif)", animationDelay: "0.2s" }}
+        >
+          {project.title}
+        </h1>
+        <p
+          className="cs-enter text-xl text-[#736E67] leading-relaxed max-w-2xl"
+          style={{ animationDelay: "0.3s" }}
+        >
+          {project.tagline}
+        </p>
       </section>
 
       {/* Cover */}
-      <FadeIn delay={0.65}>
+      <div className="cs-enter" style={{ animationDelay: "0.4s" }}>
         {project.cover ? (
           <div className="max-w-4xl mx-auto px-6 mb-12 sm:mb-20">
             <figure
@@ -121,6 +119,8 @@ export default async function CaseStudyPage({ params }: Props) {
               <img
                 src={project.cover}
                 alt={`${project.title}: cover`}
+                fetchPriority="high"
+                decoding="async"
                 className={`relative block h-full w-full ${
                   project.coverContain
                     ? "object-contain object-center p-6 sm:p-10"
@@ -136,11 +136,11 @@ export default async function CaseStudyPage({ params }: Props) {
             <div className="absolute inset-0 grain-soft" />
           </div>
         )}
-      </FadeIn>
+      </div>
 
       {/* Project overview */}
       <section className="px-6 max-w-4xl mx-auto mb-16 sm:mb-24">
-        <FadeInOnScroll>
+        <div className="cs-enter" style={{ animationDelay: "0.5s" }}>
           {/* Outcomes lead */}
           {project.outcomes && project.outcomes.length > 0 && (
             <div className="mb-14">
@@ -236,7 +236,7 @@ export default async function CaseStudyPage({ params }: Props) {
               </div>
             )}
           </div>
-        </FadeInOnScroll>
+        </div>
       </section>
 
       {/* My Process intro */}
@@ -687,9 +687,7 @@ export default async function CaseStudyPage({ params }: Props) {
                           </figure>
                         ))}
                     </div>
-                  ) : section.visual === "audit" ? (
-                    <AuditMap className="mt-4 block h-auto w-full" />
-                  ) : section.visual ? (
+                  ) : section.visual && section.visual !== "audit" ? (
                     <div className={`relative mt-4 w-full aspect-[16/9] rounded-xl overflow-hidden bg-gradient-to-br ${project.gradient}`}>
                       <div className="absolute inset-0 mesh opacity-70" />
                       <SectionVisual variant={section.visual} className="absolute inset-0" />
@@ -748,6 +746,15 @@ export default async function CaseStudyPage({ params }: Props) {
                   )}
                 </div>
               </div>
+              {section.visual === "audit" && (
+                <div className="w-screen ml-[calc(50%-50vw)] mt-10">
+                  <div className="mx-auto max-w-[1100px] overflow-x-auto px-4 sm:px-6">
+                    {/* Wide diagram: fits the body on desktop; on phones it keeps a
+                        legible min-width and scrolls horizontally instead of shrinking. */}
+                    <AuditMap className="block h-auto w-full min-w-[600px] sm:min-w-0" />
+                  </div>
+                </div>
+              )}
               {section.wideImage && (
                 <div className="w-screen ml-[calc(50%-50vw)] mt-12">
                   <div className="mx-auto max-w-[92rem] px-6">

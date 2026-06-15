@@ -2,8 +2,6 @@
 
 import { useRef } from "react"
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion"
-import { FadeIn } from "@/components/FadeIn"
-import { RevealText } from "@/components/RevealText"
 import { ScrollCue } from "@/components/ScrollCue"
 
 // As the hero scrolls away, push into the figure (you), fade the headline,
@@ -50,28 +48,30 @@ export function Hero() {
         style={reduce ? undefined : { opacity: contentOpacity, y: contentY }}
         className="relative z-10 w-full max-w-6xl mx-auto px-6 pb-20 sm:pb-28 pt-28"
       >
-        <FadeIn delay={0.1}>
-          <p className="text-xs tracking-widest uppercase text-white/70 mb-6">
-            New York
-          </p>
-        </FadeIn>
+        <p
+          className="cs-enter text-xs tracking-widest uppercase text-white/70 mb-6"
+          style={{ animationDelay: "0.05s" }}
+        >
+          New York
+        </p>
         <h1
           className="text-[clamp(2.8rem,7vw,6.5rem)] leading-[1.05] text-white mb-6 max-w-5xl"
           style={{ fontFamily: "var(--font-serif)" }}
         >
-          <RevealText onMount delay={0.2}>
-            Hi, I&apos;m Ahmed.
-          </RevealText>
+          <span className="cs-clip">
+            <span style={{ animationDelay: "0.12s" }}>Hi, I&apos;m Ahmed.</span>
+          </span>
         </h1>
-        <FadeIn delay={0.45}>
-          <p className="text-lg text-white/80 max-w-xl leading-relaxed">
-            I&apos;m a UX designer with 5 years building research
-            infrastructure, clinical design systems, and evidence-based product strategy.
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.6} className="mt-10">
+        <p
+          className="cs-enter text-lg text-white/80 max-w-xl leading-relaxed"
+          style={{ animationDelay: "0.22s" }}
+        >
+          I&apos;m a UX designer with 5 years building research
+          infrastructure, clinical design systems, and evidence-based product strategy.
+        </p>
+        <div className="cs-enter mt-10" style={{ animationDelay: "0.32s" }}>
           <ScrollCue />
-        </FadeIn>
+        </div>
       </motion.div>
 
       {/* Photo credit: it's his own street photography */}
