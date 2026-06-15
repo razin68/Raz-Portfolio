@@ -12,6 +12,13 @@
   --font-sans: "Inter", system-ui, sans-serif;
 }
 
+/* Clip horizontal overflow at the root so full-bleed sections never cause a
+   sideways scrollbar. Doing this on <html> (not an inner wrapper) keeps
+   position: sticky working, since the viewport stays the sticky container. */
+html {
+  overflow-x: clip;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-ink);

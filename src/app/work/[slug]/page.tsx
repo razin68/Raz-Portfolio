@@ -2,7 +2,8 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { projects, orderedProjects, getProject } from "@/lib/projects"
-import { FadeIn, FadeInOnScroll } from "@/components/FadeIn"
+import { FadeIn, FadeInOnScroll, QuoteReveal } from "@/components/FadeIn"
+import { ScrollProgress } from "@/components/ScrollProgress"
 import { RevealText } from "@/components/RevealText"
 import { ProjectThumb } from "@/components/ProjectThumb"
 import { SectionVisual } from "@/components/SectionVisual"
@@ -48,7 +49,8 @@ export default async function CaseStudyPage({ params }: Props) {
   const nextProject = orderedProjects[(currentIndex + 1) % orderedProjects.length]
 
   return (
-    <main className="min-h-screen overflow-x-clip">
+    <main className="min-h-screen">
+      <ScrollProgress />
       {/* Hero */}
       <section className="pt-28 sm:pt-32 pb-12 sm:pb-16 px-6 max-w-4xl mx-auto">
         <FadeIn delay={0.45}>
@@ -92,7 +94,7 @@ export default async function CaseStudyPage({ params }: Props) {
 
         <FadeIn delay={0.1}>
           <h1
-            className="text-[clamp(2.5rem,6vw,5rem)] leading-[1.1] text-[#1A1714] mb-6"
+            className="text-[clamp(1.9rem,3.4vw,2.75rem)] leading-[1.15] text-[#1A1714] mb-6"
             style={{ fontFamily: "var(--font-serif)" }}
           >
             <RevealText onMount delay={0.15}>
@@ -255,7 +257,7 @@ export default async function CaseStudyPage({ params }: Props) {
           {project.sections.map((section, i) => (
             <FadeInOnScroll key={`${section.title}-${i}`}>
               <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 md:gap-16">
-                <div>
+                <div className="md:sticky md:top-24 md:self-start">
                   <span className="text-xs tracking-widest uppercase text-[#736E67]">
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -267,6 +269,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   </h3>
                   {section.goal && (
                     <p className="text-sm text-[#736E67] mt-3 leading-relaxed">
+                      <span className="font-medium text-[#1A1714]">Goal: </span>
                       {section.goal}
                     </p>
                   )}
@@ -715,29 +718,30 @@ export default async function CaseStudyPage({ params }: Props) {
                             ? "#736E67"
                             : "#C44B20"
                         return (
-                          <figure
-                            key={j}
-                            className="border-l-[3px] pl-5"
-                            style={{ borderColor: toneColor }}
-                          >
-                            {q.tag && (
-                              <figcaption
-                                className="text-base sm:text-lg font-semibold tracking-tight mb-3"
-                                style={{ color: toneColor }}
-                              >
-                                {q.tag}
-                              </figcaption>
-                            )}
-                            <blockquote
-                              className="text-lg sm:text-xl leading-snug text-[#1A1714]"
-                              style={{ fontFamily: "var(--font-serif)" }}
+                          <QuoteReveal key={j} delay={j * 0.08}>
+                            <figure
+                              className="border-l-[3px] pl-5"
+                              style={{ borderColor: toneColor }}
                             >
-                              &ldquo;{q.text}&rdquo;
-                            </blockquote>
-                            <figcaption className="text-sm text-[#736E67] mt-3">
-                              {q.role}
-                            </figcaption>
-                          </figure>
+                              {q.tag && (
+                                <figcaption
+                                  className="text-base sm:text-lg font-semibold tracking-tight mb-3"
+                                  style={{ color: toneColor }}
+                                >
+                                  {q.tag}
+                                </figcaption>
+                              )}
+                              <blockquote
+                                className="text-lg sm:text-xl leading-snug text-[#1A1714]"
+                                style={{ fontFamily: "var(--font-serif)" }}
+                              >
+                                &ldquo;{q.text}&rdquo;
+                              </blockquote>
+                              <figcaption className="text-sm text-[#736E67] mt-3">
+                                {q.role}
+                              </figcaption>
+                            </figure>
+                          </QuoteReveal>
                         )
                       })}
                     </div>
@@ -779,29 +783,30 @@ export default async function CaseStudyPage({ params }: Props) {
                                 ? "#736E67"
                                 : "#C44B20"
                             return (
-                              <figure
-                                key={j}
-                                className="border-l-[3px] pl-5"
-                                style={{ borderColor: toneColor }}
-                              >
-                                {q.tag && (
-                                  <figcaption
-                                    className="text-base sm:text-lg font-semibold tracking-tight mb-3"
-                                    style={{ color: toneColor }}
-                                  >
-                                    {q.tag}
-                                  </figcaption>
-                                )}
-                                <blockquote
-                                  className="text-lg leading-snug text-[#1A1714]"
-                                  style={{ fontFamily: "var(--font-serif)" }}
+                              <QuoteReveal key={j} delay={j * 0.08}>
+                                <figure
+                                  className="border-l-[3px] pl-5"
+                                  style={{ borderColor: toneColor }}
                                 >
-                                  &ldquo;{q.text}&rdquo;
-                                </blockquote>
-                                <figcaption className="text-sm text-[#736E67] mt-3">
-                                  {q.role}
-                                </figcaption>
-                              </figure>
+                                  {q.tag && (
+                                    <figcaption
+                                      className="text-base sm:text-lg font-semibold tracking-tight mb-3"
+                                      style={{ color: toneColor }}
+                                    >
+                                      {q.tag}
+                                    </figcaption>
+                                  )}
+                                  <blockquote
+                                    className="text-lg leading-snug text-[#1A1714]"
+                                    style={{ fontFamily: "var(--font-serif)" }}
+                                  >
+                                    &ldquo;{q.text}&rdquo;
+                                  </blockquote>
+                                  <figcaption className="text-sm text-[#736E67] mt-3">
+                                    {q.role}
+                                  </figcaption>
+                                </figure>
+                              </QuoteReveal>
                             )
                           })}
                         </div>

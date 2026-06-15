@@ -8,6 +8,7 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-
 export function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [logoHover, setLogoHover] = useState(false)
   const pathname = usePathname()
   const { scrollY } = useScroll()
 
@@ -41,12 +42,28 @@ export function Nav() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className={`font-serif text-base transition-opacity hover:opacity-70 ${
+          onMouseEnter={() => setLogoHover(true)}
+          onMouseLeave={() => setLogoHover(false)}
+          className={`inline-flex items-center font-serif text-base ${
             onDark ? "text-white" : "text-[#1A1714]"
           }`}
-          style={{ fontFamily: "var(--font-serif)" }}
+          style={{
+            fontFamily: "var(--font-serif)",
+            letterSpacing: logoHover ? "-0.015em" : "0em",
+            opacity: logoHover ? 0.85 : 1,
+            transition: "letter-spacing 300ms ease, opacity 300ms ease",
+          }}
         >
           Ahmed Razin
+          <span
+            aria-hidden
+            className="ml-1 inline-block h-1.5 w-1.5 rounded-full bg-[#C44B20]"
+            style={{
+              opacity: logoHover ? 1 : 0,
+              transform: logoHover ? "scale(1)" : "scale(0.4)",
+              transition: "opacity 300ms ease, transform 300ms ease",
+            }}
+          />
         </Link>
 
         {/* Desktop links */}

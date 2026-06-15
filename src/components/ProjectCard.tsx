@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useState } from "react"
 import {
   motion,
   useMotionTemplate,
@@ -19,6 +20,11 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const reduce = useReducedMotion()
+
+  // Tailwind v4 gates hover: behind @media (hover: hover), so the CSS
+  // group-hover effects never fire on touch/preview. Drive them from state
+  // off the same pointer tracking the tilt already uses.
+  const [hovered, setHovered] = useState(false)
 
   // Pointer position, normalized 0..1 across the card.
   const mx = useMotionValue(0.5)
@@ -55,9 +61,19 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Card image area */}
         <motion.div
           onMouseMove={handleMove}
-          onMouseLeave={handleLeave}
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => {
+            handleLeave()
+            setHovered(false)
+          }}
           style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-          className={`relative w-full aspect-[4/3] rounded-2xl bg-gradient-to-br ${project.gradient} overflow-hidden mb-4 transition-shadow duration-500 group-hover:shadow-2xl group-hover:shadow-black/15`}
+          animate={{
+            boxShadow: hovered
+              ? "0 25px 50px -12px rgba(0,0,0,0.15)"
+              : "0 0px 0px 0px rgba(0,0,0,0)",
+          }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className={`relative w-full aspect-[4/3] rounded-2xl bg-gradient-to-br ${project.gradient} overflow-hidden mb-4`}
         >
           {project.cover ? (
             /* Real cover image */
@@ -66,7 +82,13 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               src={project.cover}
               alt={project.title}
               loading="lazy"
-              className={`absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.03] ${
+              style={{
+                transform: hovered && !reduce ? "scale(1.03)" : "scale(1)",
+                ...(project.coverContain
+                  ? { filter: "drop-shadow(0 17px 16px rgba(0,0,0,0.12))" }
+                  : {}),
+              }}
+              className={`absolute inset-0 h-full w-full transition-transform duration-500 ${
                 project.coverContain
                   ? "object-contain object-center p-6 sm:p-8"
                   : "object-cover"
@@ -88,17 +110,25 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </>
           )}
 
-          {/* Warm terracotta sweep on hover */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#C44B20]/25 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
           {/* Hover CTA */}
           <div
             className="absolute inset-0 flex items-end p-5"
             style={{ transform: "translateZ(35px)" }}
           >
-            <span className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-[#1A1714] bg-[#F8F5F0]/55 backdrop-blur-md rounded-full px-3.5 py-2 ring-1 ring-black/5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+            <span
+              className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-[#1A1714] bg-[#F8F5F0]/55 backdrop-blur-md rounded-full px-3.5 py-2 ring-1 ring-black/5 transition-all duration-300"
+              style={{
+                opacity: hovered ? 1 : 0,
+                transform: hovered || reduce ? "translateX(0)" : "translateX(-8px)",
+              }}
+            >
               View case study
-              <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+              <span
+                className="transition-transform duration-300"
+                style={{ transform: hovered && !reduce ? "translateX(4px)" : "translateX(0)" }}
+              >
+                →
+              </span>
             </span>
           </div>
         </motion.div>

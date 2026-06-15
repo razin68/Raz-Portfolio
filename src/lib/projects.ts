@@ -137,7 +137,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "student-voice-system",
-    title: "Elevating student voice with a write-once content system",
+    title: "Elevating the student voice with a write-once content system",
     tagline:
       "Real student stories, surfaced where enrollment decisions happen.",
     tags: ["Research Synthesis", "Component Design", "Content Strategy"],
@@ -333,7 +333,7 @@ export const projects: Project[] = [
   },
   {
     slug: "ux-research-framework",
-    title: "Improving provider experience with a scoring framework",
+    title: "Improving the Provider Search experience with a strong research framework",
     tagline:
       "Replacing 'I don't like the blue' with a number the team could trust.",
     tags: ["Provider Search", "Interaction Design", "Weighted Scoring"],
@@ -563,9 +563,9 @@ export const projects: Project[] = [
   },
   {
     slug: "healthcare-design-library",
-    title: "A design system people trust, fully adopted",
+    title: "Turning the design system from ignored to fully adopted",
     tagline:
-      "Rebuilt from the tokens up in under three months, after every prior attempt had failed.",
+      "Rebuilt the token architecture with the engineers who had to implement it.",
     tags: ["Design Tokens", "Engineering Partnership", "Documentation"],
     timeline: "Under 3 months, end-to-end",
     gradient: "from-stone-200 to-amber-200",
